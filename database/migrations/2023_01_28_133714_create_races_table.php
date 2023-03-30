@@ -18,7 +18,7 @@ class CreateRacesTable extends Migration
             $table->longText('title')->unique();
             $table->longText('description');
             $table->float('unevenness',4,2);//desnivel
-            $table->string('image');
+            $table->longtext('image');
             $table->integer('number_participants');
             $table->integer('km');
             $table->datetime('date');
@@ -26,6 +26,7 @@ class CreateRacesTable extends Migration
             $table->string('start');
             $table->boolean('state');//if it's activated or not
             $table->float('price',4,2);
+            $table->float('sponsor_price',4,2)->nullable();
             $table->timestamps();
         });
     }

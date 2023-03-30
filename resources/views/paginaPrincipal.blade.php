@@ -3,14 +3,16 @@
 @section('content')
     <div class="divCarreras">
         <h1>Página principal</h1>
-        <div class="races">
+
+ 
+        <div class="row">
             @foreach($races as $race)
                 <?php
                     $id = $race['id'];
                 ?>
-                <div class="divraces">
-                    <?php $image=preg_replace('([^A-Za-z0-9 ])', '', $race['image'])?>
-                    <a href="#"><img src="../resources/img/<?php echo strtolower($image) ?>.jpg" alt=""></a>
+                <div class="col">
+                    <?php $prom=preg_replace('([^A-Za-z0-9 ])', '', $race['promotion'])?>
+                    <img style="width:200px" src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="">
                     <h2>{{$race['title']}}</h2>
                     <p>{{$race['description']}}</p>
                     <p>{{$race['date']}}</p>
@@ -34,5 +36,6 @@
             @endforeach
         <div>
     </div>
+    
 
 @endsection

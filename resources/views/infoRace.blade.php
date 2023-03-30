@@ -4,9 +4,10 @@
 
 {{-- info carrera --}}
 <div>
-    <?php $image=preg_replace('([^A-Za-z0-9 ])', '', $races['image'])?>
-    <img src="../../resources/img/<?php echo strtolower($image) ?>.jpg" alt=""/>
+    <p>Mapa</p>
+    <a href="#"><?php echo $races['image']?></a>
 </div>
+
 <div>
     <h3>{{$races['title']}}</h3>
 </div>
@@ -32,11 +33,6 @@
     <p>Precio : {{$races['price']}}</p>
 </div>
 
-<div>
-    <p>Cartel de promoción</p>
-    <?php $promocion=preg_replace('([^A-Za-z0-9 ])', '', $races['promotion'])?>
-    <img src="../../resources/img/<?php echo strtolower($promocion) ?>.jpg" alt=""/>
-</div>
 
 <?php $id=$races['id']; 
 

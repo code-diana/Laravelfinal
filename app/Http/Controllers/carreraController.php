@@ -29,20 +29,21 @@ class carreraController extends Controller
             ]);  
 
             //subir la imagen
-            if($request->hasFile('image')){
-                $imagen = $request->file('image');
+            if($request->hasFile('promotion')){
+                // $imagen = $request->file('image');
                 $promotion = $request->file('promotion');
 
-                //aquí le asignamos el nombre
-                $nombreimagen = Str::slug($request->file('image')).".".$imagen->guessExtension();
+                // //aquí le asignamos el nombre
+                // $nombreimagen = Str::slug($request->file('image')).".".$imagen->guessExtension();
                 $nombreprom = Str::slug($request->file('promotion')).".".$promotion->guessExtension();
 
                 //y la ruta
                 $ruta = public_path("../resources/img/");
     
                 //$imagen->move($ruta,$nombreimagen);
-                copy($imagen->getRealPath(),$ruta.$nombreimagen);     
+                // copy($imagen->getRealPath(),$ruta.$nombreimagen);     
                 copy($promotion->getRealPath(),$ruta.$nombreprom);     
+                
             }
         }
         else{
@@ -130,7 +131,6 @@ class carreraController extends Controller
             ]);
         }
     }
-
 
     public function editProm(Request $request){
         $carrera = Race::find($request->id);
