@@ -10,7 +10,7 @@
                 <?php
                     $id = $race['id'];
                 ?>
-                <div class="col">
+                <div class="col-lg-4">
                     <?php $prom=preg_replace('([^A-Za-z0-9 ])', '', $race['promotion'])?>
                     <img style="width:200px" src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="">
                     <h2>{{$race['title']}}</h2>
