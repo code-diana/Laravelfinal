@@ -37,5 +37,22 @@
         <div>
     </div>
     
+    <!-- Finalizadas -->
+    <div class="row">
+            <h1>Carreras FInalizadas</h1>
+            @foreach($races as $race)
+                <?php
+                    $id = $race['id'];
+                ?>
+                <div class="col-lg-6">
+                    <?php $prom=preg_replace('([^A-Za-z0-9 ])', '', $race['promotion'])?>
+                    <img style="width:200px" src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="">
+                    <h2>{{$race['title']}}</h2>
+                    <p>{{$race['description']}}</p>
+                    <p>{{$race['date']}}</p>
+                    <a href="infoRace/{{$id}}"><div class="info"><p>Más información</p></div></a>
+                </div>
+            @endforeach
+        </div>
 
 @endsection
