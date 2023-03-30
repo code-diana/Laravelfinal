@@ -2,38 +2,40 @@
 @section('content')
 <h1>Información carrera</h1>
 
-{{-- info carrera --}}
-<div>
-    <p>Mapa</p>
-    <a href="#"><?php echo $races['image']?></a>
-</div>
+<div class="row">
+    {{-- info carrera --}}
+    <div class="col-lg-8">
+        <p>Mapa</p>
+        <a href="#"><?php echo $races['image']?></a>
+    </div>
 
-<div>
-    <h3>{{$races['title']}}</h3>
+    <div class="col-lg-4">
+        <div>
+            <h3>{{$races['title']}}</h3>
+        </div>
+        <div>
+            <p>Descripción : {{$races['description']}}</p>
+        </div>  
+        <div>
+            <p>Desnivel : {{$races['unevenness']}}</p>
+        </div>
+        <div>
+            <p>Numero participantes : {{$races['number_participants']}}</p>
+        </div>
+        <div>
+            <p>Kilometros : {{$races['km']}}</p>
+        </div>
+        <div>
+            <p>Fecha y hora de salida  : {{$races['date']}}</p>
+        </div>
+        <div>
+            <p>Punto de salida : {{$races['start']}}</p>
+        </div>
+        <div>
+            <p>Precio : {{$races['price']}}</p>
+        </div>
+    </div>
 </div>
-<div>
-    <p>Descripción : {{$races['description']}}</p>
-</div>  
-<div>
-    <p>Desnivel : {{$races['unevenness']}}</p>
-</div>
-<div>
-    <p>Numero participantes : {{$races['number_participants']}}</p>
-</div>
-<div>
-    <p>Kilometros : {{$races['km']}}</p>
-</div>
-<div>
-    <p>Fecha y hora de salida  : {{$races['date']}}</p>
-</div>
-<div>
-    <p>Punto de salida : {{$races['start']}}</p>
-</div>
-<div>
-    <p>Precio : {{$races['price']}}</p>
-</div>
-
-
 <?php $id=$races['id']; 
 
 
