@@ -100,5 +100,25 @@ table {
   margin: auto;
   text-align: center;
   border-collapse: collapse;
-}/*# sourceMappingURL=app.css.map */
+}
 
+iframe {
+  width: 200px;
+  height: 200px;
+}
+
+.carrerasproximas {
+  max-width: 300px !important;
+  height: 200px;
+}
+
+.but {
+  margin: 0 !important;
+}
+
+.racemap iframe {
+  max-width: 700px !important;
+  width: 700px !important;
+  height: 400px !important;
+  max-height: 400px !important;
+}/*# sourceMappingURL=app.css.map */

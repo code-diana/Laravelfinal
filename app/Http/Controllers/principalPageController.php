@@ -9,12 +9,17 @@ use App\Models\Sponsor;
 class principalPageController extends Controller
 {
     public function __invoke(){
-        $races = Race::where('state',1)->get();
+        //proximas
+        $races = Race::where('state',1)->orderBy('date', 'ASC')->get();
+
+        //finalizadas
+        $fin = Race::where('state',1)->orderBy('date', 'DESC')->get();  //->limit('2')
+
         $sponsors = Sponsor::where('sponsorState',1)
                             ->where('main_plain',1)
                             ->get();
         return view('paginaPrincipal' , [
-            'races' => $races , 'sponsors' => $sponsors
+            'races' => $races , 'sponsors' => $sponsors , 'fin' => $fin
         ]);
     }
 

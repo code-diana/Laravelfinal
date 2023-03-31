@@ -1,7 +1,7 @@
 <style>
     td,th{border: 1px solid;}
     td{width: 80px}
-    table{width: 1200px;margin: auto;text-align: center;}
+    table{width: 1500px;margin: auto;text-align: center;}
     img{width: 50%;height: 50%}
     iframe{max-width:200px !important;max-height:200px;}
 </style>
