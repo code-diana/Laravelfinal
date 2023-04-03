@@ -37,7 +37,8 @@ class inscripcionController extends Controller
             else{
                 $ins=Inscription::where('runner_id',$request->runner)->delete();
                 $runner=Runner::find($request->runner)->delete();
-                echo 'borrado';
+                //se borra tanto de corredor como de inscripcion
+                return redirect('/');
             }
         }
         else{

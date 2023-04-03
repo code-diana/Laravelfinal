@@ -116,6 +116,8 @@ Route::get('selectRaces/{id}' , [patronizeController::class , 'showRaces']);
 //Paypal
 Route::get('/paypal/pay', 'App\Http\Controllers\PaymentController@payWithPayPal')->name('paypal');
 Route::get('/paypal/status', 'App\Http\Controllers\PaymentController@payPalStatus')->name('status');
+Route::get('/paypal/results', 'App\Http\Controllers\PaymentController@payPalView')->name('results');
+
 
 //Factura corredor
 Route::get('facturaCorredor' ,[inscripcionController::class , 'facturaCorredor'])->name('facturaCorredor');
