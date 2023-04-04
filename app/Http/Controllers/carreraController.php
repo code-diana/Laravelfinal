@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Race;
 use App\Models\Runner;
 use App\Models\Inscription;
+use App\Models\Ensure;
+use App\Models\Insurance;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 
@@ -24,7 +26,8 @@ class carreraController extends Controller
                 'date'=>request('date'),
                 'promotion'=>request('promotion'),
                 'start'=>request('start'),
-                'state'=>1,
+                //se crean desactivadas
+                'state'=>0,
                 'price'=>request('price')
             ]);  
 
@@ -64,8 +67,21 @@ class carreraController extends Controller
             $race->state = 0;
         }
         else{
-            $race->state = 1;
+            if (Ensure::where('id_race',$request->id)->count()==0){
+                ?> <script>alert('Escoge una aseguradora como mínimo')</script> <?php
+                $ins=Insurance::where('estado',1)->get();
+                return view('admin.aseguradoras.altaCarrera' ,[
+                    'insurance' => $ins,
+                    'idC'=> $request->id
+                ]);
+
+            }
+            else{
+                $race->state = 1;
+            }
+            
         }
+
         $race->save();
         $race = Race::all();
         

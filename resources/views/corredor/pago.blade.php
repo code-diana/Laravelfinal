@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 {{-- Para escribir el contenido de la pagina, hay que hacer una section con mismo nombre del yield en el archivo layout.balde.php  --}}
 @section('content')
+
 <form action="{{ route('ins') }} " method="POST" accept-charset="UTF-8" class="formaddcarrera" enctype="multipart/form-data">
   @csrf
   <div class="form-group row">
@@ -39,6 +40,8 @@
 <a href="{{route('facturaCorredor' , $runner)}}">Descargar factura</a>  
 
 {{-- <p><a href="{{url('/')}}">Volver atrás</a></p> --}}
+
+
 
 
 <!-- Meter Jquery para cambiar texto del botón -->

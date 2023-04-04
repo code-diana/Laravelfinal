@@ -107,6 +107,9 @@ Route::post('inscribir', [inscripcionController::class, 'inscribir'])->name('ins
 Route::get('aseguradoraC/{id}', [aseguradoraController::class, 'precioCarrera']);
 Route::post('aseguradoraC/{id}', [aseguradoraController::class, 'precioCarrera']);
 
+//escoger aseguradora desde cero
+Route::post('estadoCarrera/{id}', [aseguradoraController::class, 'precioCarrera']);
+
 //qrcarreras
 Route::get('qr/{id}', [carreraController::class , 'qr']);
 

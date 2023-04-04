@@ -102,7 +102,7 @@ class aseguradoraController extends Controller
                     $ensure->id_insurances = $as;
                     $ensure->id_race = $request->idC;
 
-                    //coger el precio base + km // 2
+                    //al precio base se le suma ientre 10 y 50€ mas por
                     $ensure->price = $insurance->price+rand(10,50);
                     $ensure->save();
                 }                
@@ -121,7 +121,7 @@ class aseguradoraController extends Controller
         else{
             //Arreglar esto para que solo deje seleccionar las que ya no están 
 
-            $insurance = Insurance::all();
+            $insurance = Insurance::where('estado',1)->get();
             // $insid= Insurance::find($id);
             // $ensure = Ensure::where('id_race');
             // $insurance = Insurance::join('ensures', 'ensures.id_insurances', '!=', 'insurances.id')

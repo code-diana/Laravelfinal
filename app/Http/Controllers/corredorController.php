@@ -50,6 +50,21 @@ class corredorController extends Controller{
 
 
                 //Control duplicados
+            // $users=Inscription::where('race_id',$request->id)->whereIn('runner_id', function($query){
+            //         $query->select('name')
+            //         ->from(with(new Runner)->getTable())
+            //         ->where('name', request('nombre'))
+            //         ->where('last_name', request('surname'))
+            //         ->where('birth_date', request('birth'));
+            //     })->count();
+
+            //     if ($users==0){
+            //         return redirect('/');
+            //     }
+                
+  
+                
+
 
              
 
@@ -66,6 +81,7 @@ class corredorController extends Controller{
                             'id'=> request('id'),
                             'aseguradora' => $As->id,
                             'pro' => $pro
+                            
                     ]);
                 //}
                 // else{
