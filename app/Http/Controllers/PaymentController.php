@@ -35,13 +35,13 @@ class PaymentController extends Controller
         );
     }
 
-    public function payWithPayPal(){
+    public function payWithPayPal(Request $request){
         // After Step 2
         $payer = new \PayPal\Api\Payer();
         $payer->setPaymentMethod('paypal');
 
         $amount = new \PayPal\Api\Amount();
-        $amount->setTotal('1.00');
+        $amount->setTotal(floatval($request->price));
         $amount->setCurrency('EUR');
 
         $transaction = new \PayPal\Api\Transaction();

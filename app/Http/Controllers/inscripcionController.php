@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Inscription;
 use App\Models\Runner;
+use App\Models\Race;
+use App\Models\Ensure;
 use Illuminate\Support\Facades\DB;
 use PDF;
 
@@ -32,8 +34,21 @@ class inscripcionController extends Controller
                     'finish_time'=>NULL
                 ]);
 
-                return redirect()->route('paypal');
+                //Pasar el precio a paypal 
+                $price=Race::select('price')->where('id',$request->id)->get();
+
+                if($request->pro==0){
+                    $p=Ensure::select('price')->where('id_race',$request->id)->where('id_insurances',$aseguradora)->get();
+                    $price=$p[0]['price']+$price[0]['price'];
+                }
+                else{
+                    $price=$price[0]['price'];
+                }
+                return redirect()->route('paypal',[
+                    'price'=> $price
+                ]);
             }
+
             else{
                 $ins=Inscription::where('runner_id',$request->runner)->delete();
                 $runner=Runner::find($request->runner)->delete();
