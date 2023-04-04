@@ -9220,3 +9220,543 @@
 #43 C:\\xampp\\htdocs\\bikerollabril\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #44 {main}
 "} 
+[2023-04-04 13:53:14] local.ERROR: Undefined variable $ensures {"view":{"view":"C:\\xampp\\htdocs\\bikerollabril\\resources\\views\\corredor\\altaCorredor.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-888392315 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#328</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-888392315\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","races":"<pre class=sf-dump id=sf-dump-1680523012 data-indent-pad=\"  \"><span class=sf-dump-note>App\\Models\\Race</span> {<a class=sf-dump-ref>#350</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">races</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+  +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+  #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+  +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+  +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:15</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>id</span>\" => <span class=sf-dump-num>2</span>
+    \"<span class=sf-dump-key>title</span>\" => \"<span class=sf-dump-str title=\"9 characters\">Carrera 1</span>\"
+    \"<span class=sf-dump-key>description</span>\" => \"<span class=sf-dump-str title=\"27 characters\">Esta es la carrera de bicis</span>\"
+    \"<span class=sf-dump-key>unevenness</span>\" => <span class=sf-dump-num>2.0</span>
+    \"<span class=sf-dump-key>image</span>\" => \"<span class=sf-dump-str title=\"554 characters\">&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d23918.70307505049!2d2.2602147287263916!3d41.464431332072536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1s0x12a4b0b8ebcf1ae1%3A0xa7b059f68934eeef!2sEl%20Masnou!3m2!1d41.4826455!2d2.3114706!4m5!1s0x12a4bb1298efb741%3A0x987b0abc3e6ea84d!2sBadalona%2C%20Barcelona!3m2!1d41.4469883!2d2.2450324999999998!5e0!3m2!1sca!2ses!4v1680207639361!5m2!1sca!2ses&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;</span>\"
+    \"<span class=sf-dump-key>number_participants</span>\" => <span class=sf-dump-num>2</span>
+    \"<span class=sf-dump-key>km</span>\" => <span class=sf-dump-num>12</span>
+    \"<span class=sf-dump-key>date</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2023-04-13 22:20:00</span>\"
+    \"<span class=sf-dump-key>promotion</span>\" => \"<span class=sf-dump-str title=\"24 characters\">C:\\xampp\\tmp\\php1A3A.tmp</span>\"
+    \"<span class=sf-dump-key>start</span>\" => \"<span class=sf-dump-str title=\"9 characters\">Barceolna</span>\"
+    \"<span class=sf-dump-key>state</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>price</span>\" => <span class=sf-dump-num>9.0</span>
+    \"<span class=sf-dump-key>sponsor_price</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2023-03-30 20:21:35</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2023-04-04 13:41:27</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:15</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>id</span>\" => <span class=sf-dump-num>2</span>
+    \"<span class=sf-dump-key>title</span>\" => \"<span class=sf-dump-str title=\"9 characters\">Carrera 1</span>\"
+    \"<span class=sf-dump-key>description</span>\" => \"<span class=sf-dump-str title=\"27 characters\">Esta es la carrera de bicis</span>\"
+    \"<span class=sf-dump-key>unevenness</span>\" => <span class=sf-dump-num>2.0</span>
+    \"<span class=sf-dump-key>image</span>\" => \"<span class=sf-dump-str title=\"554 characters\">&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d23918.70307505049!2d2.2602147287263916!3d41.464431332072536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1s0x12a4b0b8ebcf1ae1%3A0xa7b059f68934eeef!2sEl%20Masnou!3m2!1d41.4826455!2d2.3114706!4m5!1s0x12a4bb1298efb741%3A0x987b0abc3e6ea84d!2sBadalona%2C%20Barcelona!3m2!1d41.4469883!2d2.2450324999999998!5e0!3m2!1sca!2ses!4v1680207639361!5m2!1sca!2ses&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;</span>\"
+    \"<span class=sf-dump-key>number_participants</span>\" => <span class=sf-dump-num>2</span>
+    \"<span class=sf-dump-key>km</span>\" => <span class=sf-dump-num>12</span>
+    \"<span class=sf-dump-key>date</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2023-04-13 22:20:00</span>\"
+    \"<span class=sf-dump-key>promotion</span>\" => \"<span class=sf-dump-str title=\"24 characters\">C:\\xampp\\tmp\\php1A3A.tmp</span>\"
+    \"<span class=sf-dump-key>start</span>\" => \"<span class=sf-dump-str title=\"9 characters\">Barceolna</span>\"
+    \"<span class=sf-dump-key>state</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>price</span>\" => <span class=sf-dump-num>9.0</span>
+    \"<span class=sf-dump-key>sponsor_price</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2023-03-30 20:21:35</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2023-04-04 13:41:27</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+  +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:12</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str title=\"5 characters\">title</span>\"
+    <span class=sf-dump-index>1</span> => \"<span class=sf-dump-str title=\"11 characters\">description</span>\"
+    <span class=sf-dump-index>2</span> => \"<span class=sf-dump-str title=\"10 characters\">unevenness</span>\"
+    <span class=sf-dump-index>3</span> => \"<span class=sf-dump-str title=\"5 characters\">image</span>\"
+    <span class=sf-dump-index>4</span> => \"<span class=sf-dump-str title=\"19 characters\">number_participants</span>\"
+    <span class=sf-dump-index>5</span> => \"<span class=sf-dump-str title=\"2 characters\">km</span>\"
+    <span class=sf-dump-index>6</span> => \"<span class=sf-dump-str title=\"4 characters\">date</span>\"
+    <span class=sf-dump-index>7</span> => \"<span class=sf-dump-str title=\"9 characters\">promotion</span>\"
+    <span class=sf-dump-index>8</span> => \"<span class=sf-dump-str title=\"5 characters\">start</span>\"
+    <span class=sf-dump-index>9</span> => \"<span class=sf-dump-str title=\"5 characters\">state</span>\"
+    <span class=sf-dump-index>10</span> => \"<span class=sf-dump-str title=\"5 characters\">price</span>\"
+    <span class=sf-dump-index>11</span> => \"<span class=sf-dump-str title=\"13 characters\">sponsor_price</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str>*</span>\"
+  </samp>]
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1680523012\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","aseguradoras":"<pre class=sf-dump id=sf-dump-428627287 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Database\\Eloquent\\Collection</span> {<a class=sf-dump-ref>#1292</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:2</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note title=\"App\\Models\\Insurance
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Insurance</span> {<a class=sf-dump-ref>#1293</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"10 characters\">insurances</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:8</span> [ &#8230;8]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:8</span> [ &#8230;8]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+    <span class=sf-dump-index>1</span> => <span class=sf-dump-note title=\"App\\Models\\Insurance
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Insurance</span> {<a class=sf-dump-ref>#1294</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"10 characters\">insurances</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:8</span> [ &#8230;8]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:8</span> [ &#8230;8]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-428627287\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Undefined variable $ensures at C:\\xampp\\htdocs\\bikerollabril\\resources\\views\\corredor\\altaCorredor.blade.php:66)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(250): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 66)
+#1 C:\\xampp\\htdocs\\bikerollabril\\resources\\views\\corredor\\altaCorredor.blade.php(66): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 66)
+#2 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
+#5 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(70): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#6 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(195): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#7 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(178): Illuminate\\View\\View->getContents()
+#8 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(147): Illuminate\\View\\View->renderContents()
+#9 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(906): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(875): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 C:\\xampp\\htdocs\\bikerollabril\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 {main}
+
+[previous exception] [object] (ErrorException(code: 0): Undefined variable $ensures at C:\\xampp\\htdocs\\bikerollabril\\storage\\framework\\views\\bb1594c7f50daa6ed77a5bb8a75c472a.php:66)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(250): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 66)
+#1 C:\\xampp\\htdocs\\bikerollabril\\storage\\framework\\views\\bb1594c7f50daa6ed77a5bb8a75c472a.php(66): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 66)
+#2 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
+#5 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(70): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#6 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(195): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#7 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(178): Illuminate\\View\\View->getContents()
+#8 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(147): Illuminate\\View\\View->renderContents()
+#9 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(906): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(875): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 C:\\xampp\\htdocs\\bikerollabril\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 {main}
+"} 
+[2023-04-04 13:56:31] local.ERROR: Undefined variable $ensures {"view":{"view":"C:\\xampp\\htdocs\\bikerollabril\\resources\\views\\corredor\\altaCorredor.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1579850389 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#328</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1579850389\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","races":"<pre class=sf-dump id=sf-dump-588043236 data-indent-pad=\"  \"><span class=sf-dump-note>App\\Models\\Race</span> {<a class=sf-dump-ref>#350</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">races</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+  +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+  #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+  +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+  +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:15</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>id</span>\" => <span class=sf-dump-num>2</span>
+    \"<span class=sf-dump-key>title</span>\" => \"<span class=sf-dump-str title=\"9 characters\">Carrera 1</span>\"
+    \"<span class=sf-dump-key>description</span>\" => \"<span class=sf-dump-str title=\"27 characters\">Esta es la carrera de bicis</span>\"
+    \"<span class=sf-dump-key>unevenness</span>\" => <span class=sf-dump-num>2.0</span>
+    \"<span class=sf-dump-key>image</span>\" => \"<span class=sf-dump-str title=\"554 characters\">&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d23918.70307505049!2d2.2602147287263916!3d41.464431332072536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1s0x12a4b0b8ebcf1ae1%3A0xa7b059f68934eeef!2sEl%20Masnou!3m2!1d41.4826455!2d2.3114706!4m5!1s0x12a4bb1298efb741%3A0x987b0abc3e6ea84d!2sBadalona%2C%20Barcelona!3m2!1d41.4469883!2d2.2450324999999998!5e0!3m2!1sca!2ses!4v1680207639361!5m2!1sca!2ses&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;</span>\"
+    \"<span class=sf-dump-key>number_participants</span>\" => <span class=sf-dump-num>2</span>
+    \"<span class=sf-dump-key>km</span>\" => <span class=sf-dump-num>12</span>
+    \"<span class=sf-dump-key>date</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2023-04-13 22:20:00</span>\"
+    \"<span class=sf-dump-key>promotion</span>\" => \"<span class=sf-dump-str title=\"24 characters\">C:\\xampp\\tmp\\php1A3A.tmp</span>\"
+    \"<span class=sf-dump-key>start</span>\" => \"<span class=sf-dump-str title=\"9 characters\">Barceolna</span>\"
+    \"<span class=sf-dump-key>state</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>price</span>\" => <span class=sf-dump-num>9.0</span>
+    \"<span class=sf-dump-key>sponsor_price</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2023-03-30 20:21:35</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2023-04-04 13:41:27</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:15</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>id</span>\" => <span class=sf-dump-num>2</span>
+    \"<span class=sf-dump-key>title</span>\" => \"<span class=sf-dump-str title=\"9 characters\">Carrera 1</span>\"
+    \"<span class=sf-dump-key>description</span>\" => \"<span class=sf-dump-str title=\"27 characters\">Esta es la carrera de bicis</span>\"
+    \"<span class=sf-dump-key>unevenness</span>\" => <span class=sf-dump-num>2.0</span>
+    \"<span class=sf-dump-key>image</span>\" => \"<span class=sf-dump-str title=\"554 characters\">&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d23918.70307505049!2d2.2602147287263916!3d41.464431332072536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1s0x12a4b0b8ebcf1ae1%3A0xa7b059f68934eeef!2sEl%20Masnou!3m2!1d41.4826455!2d2.3114706!4m5!1s0x12a4bb1298efb741%3A0x987b0abc3e6ea84d!2sBadalona%2C%20Barcelona!3m2!1d41.4469883!2d2.2450324999999998!5e0!3m2!1sca!2ses!4v1680207639361!5m2!1sca!2ses&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;</span>\"
+    \"<span class=sf-dump-key>number_participants</span>\" => <span class=sf-dump-num>2</span>
+    \"<span class=sf-dump-key>km</span>\" => <span class=sf-dump-num>12</span>
+    \"<span class=sf-dump-key>date</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2023-04-13 22:20:00</span>\"
+    \"<span class=sf-dump-key>promotion</span>\" => \"<span class=sf-dump-str title=\"24 characters\">C:\\xampp\\tmp\\php1A3A.tmp</span>\"
+    \"<span class=sf-dump-key>start</span>\" => \"<span class=sf-dump-str title=\"9 characters\">Barceolna</span>\"
+    \"<span class=sf-dump-key>state</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>price</span>\" => <span class=sf-dump-num>9.0</span>
+    \"<span class=sf-dump-key>sponsor_price</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2023-03-30 20:21:35</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2023-04-04 13:41:27</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+  +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:12</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str title=\"5 characters\">title</span>\"
+    <span class=sf-dump-index>1</span> => \"<span class=sf-dump-str title=\"11 characters\">description</span>\"
+    <span class=sf-dump-index>2</span> => \"<span class=sf-dump-str title=\"10 characters\">unevenness</span>\"
+    <span class=sf-dump-index>3</span> => \"<span class=sf-dump-str title=\"5 characters\">image</span>\"
+    <span class=sf-dump-index>4</span> => \"<span class=sf-dump-str title=\"19 characters\">number_participants</span>\"
+    <span class=sf-dump-index>5</span> => \"<span class=sf-dump-str title=\"2 characters\">km</span>\"
+    <span class=sf-dump-index>6</span> => \"<span class=sf-dump-str title=\"4 characters\">date</span>\"
+    <span class=sf-dump-index>7</span> => \"<span class=sf-dump-str title=\"9 characters\">promotion</span>\"
+    <span class=sf-dump-index>8</span> => \"<span class=sf-dump-str title=\"5 characters\">start</span>\"
+    <span class=sf-dump-index>9</span> => \"<span class=sf-dump-str title=\"5 characters\">state</span>\"
+    <span class=sf-dump-index>10</span> => \"<span class=sf-dump-str title=\"5 characters\">price</span>\"
+    <span class=sf-dump-index>11</span> => \"<span class=sf-dump-str title=\"13 characters\">sponsor_price</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str>*</span>\"
+  </samp>]
+</samp>}
+</pre><script>Sfdump(\"sf-dump-588043236\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","aseguradoras":"<pre class=sf-dump id=sf-dump-1218533565 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Database\\Eloquent\\Collection</span> {<a class=sf-dump-ref>#1292</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:2</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note title=\"App\\Models\\Insurance
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Insurance</span> {<a class=sf-dump-ref>#1293</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"10 characters\">insurances</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:8</span> [ &#8230;8]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:8</span> [ &#8230;8]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+    <span class=sf-dump-index>1</span> => <span class=sf-dump-note title=\"App\\Models\\Insurance
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>Insurance</span> {<a class=sf-dump-ref>#1294</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"10 characters\">insurances</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:8</span> [ &#8230;8]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:8</span> [ &#8230;8]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1218533565\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Undefined variable $ensures at C:\\xampp\\htdocs\\bikerollabril\\resources\\views\\corredor\\altaCorredor.blade.php:66)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(250): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 66)
+#1 C:\\xampp\\htdocs\\bikerollabril\\resources\\views\\corredor\\altaCorredor.blade.php(66): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 66)
+#2 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
+#5 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(70): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#6 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(195): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#7 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(178): Illuminate\\View\\View->getContents()
+#8 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(147): Illuminate\\View\\View->renderContents()
+#9 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(906): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(875): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 C:\\xampp\\htdocs\\bikerollabril\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 {main}
+
+[previous exception] [object] (ErrorException(code: 0): Undefined variable $ensures at C:\\xampp\\htdocs\\bikerollabril\\storage\\framework\\views\\bb1594c7f50daa6ed77a5bb8a75c472a.php:66)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(250): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 66)
+#1 C:\\xampp\\htdocs\\bikerollabril\\storage\\framework\\views\\bb1594c7f50daa6ed77a5bb8a75c472a.php(66): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 66)
+#2 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
+#5 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(70): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#6 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(195): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#7 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(178): Illuminate\\View\\View->getContents()
+#8 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(147): Illuminate\\View\\View->renderContents()
+#9 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(906): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(875): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 C:\\xampp\\htdocs\\bikerollabril\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 C:\\xampp\\htdocs\\bikerollabril\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 {main}
+"} 

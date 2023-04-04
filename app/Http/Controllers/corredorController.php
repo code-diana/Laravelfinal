@@ -8,6 +8,7 @@ use App\Models\Race;
 use App\Models\Insurance;
 use App\Models\Inscription;
 use App\Models\Ensure;
+use Illuminate\Support\Facades\DB;
 
 class corredorController extends Controller{
     //
@@ -20,7 +21,7 @@ class corredorController extends Controller{
             //control de isncripciones
             
             //el ordden es importante ... >:CCC
-            if (Inscription::find(request('id'))==NULL || Inscription::all()->count()<$races->number_participants){
+            if (Inscription::where('race_id', request('id'))->count()<$races->number_participants){
                 if(request('sexo')=='masculino'){
                     $sex=1;
                 }
@@ -47,6 +48,12 @@ class corredorController extends Controller{
 
                 ]);
 
+
+                //Control duplicados
+
+             
+
+
                 // $corredor=DB::table('runners')->where('name', request('nombre') );
                 $nameAs=request('aseguradora');
 
@@ -67,13 +74,23 @@ class corredorController extends Controller{
             }
             else{
                 ?> <script>alert('No se pueden inscribir más corredores')</script> <?php
+                // return view('corredor.altaCorredor',[
+                //     'races' => $races,
+                //     'aseguradoras' => Insurance::all()
+                // ]);
                 return view('corredor.altaCorredor',[
                     'races' => $races,
-                    'aseguradoras' => Insurance::all()
+                    'aseguradoras' => Insurance::select('insurances.*')
+                    ->join('ensures', 'ensures.id_insurances', '=', 'insurances.id')->
+                    where('ensures.id_race','=', $id)->get(),
+    
+                    'ensures' => Ensure::select('ensures.*')->where('ensures.id_race', '=', $id)->get()
                 ]);
             }
             
         }
+       
+
         else{
             return view('corredor.altaCorredor',[
                 'races' => $races,
