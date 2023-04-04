@@ -19,6 +19,23 @@ class corredorController extends Controller{
 
         if(isset ($_POST['inscription'])){
             //control de isncripciones
+
+            //Control de dupplicados, movida máxima pero funciona :D
+            $corredores=Runner::where('name',request('nombre'))->where('last_name',request('surname'))->where('birth_date',request('birth'))->get();
+            if ($corredores->count()>0){$result=Inscription::where('race_id',$request->id)->where('runner_id',$corredores[0]['id'])->count();
+
+            if ($result!=0){
+                ?><script> alert("Ya te has inscrito en esta carrera") </script><?php
+                return view('corredor.altaCorredor',[
+                    'races' => $races,
+                    'aseguradoras' => Insurance::select('insurances.*')
+                    ->join('ensures', 'ensures.id_insurances', '=', 'insurances.id')->
+                    where('ensures.id_race','=', $request->id)->get(),
+    
+                    'ensures' => Ensure::select('ensures.*')->where('ensures.id_race', '=', $request->id)->get()
+                ]);
+            }
+        }
             
             //el ordden es importante ... >:CCC
             if (Inscription::where('race_id', request('id'))->count()<$races->number_participants){
@@ -36,6 +53,9 @@ class corredorController extends Controller{
                     $pro=0;
                 }
 
+                
+                
+
                 $runner=Runner::create([
                     'name'=>request('nombre'),
                     'last_name'=>request('surname'),
@@ -47,26 +67,6 @@ class corredorController extends Controller{
                     'points'=>0
 
                 ]);
-
-
-                //Control duplicados
-            // $users=Inscription::where('race_id',$request->id)->whereIn('runner_id', function($query){
-            //         $query->select('name')
-            //         ->from(with(new Runner)->getTable())
-            //         ->where('name', request('nombre'))
-            //         ->where('last_name', request('surname'))
-            //         ->where('birth_date', request('birth'));
-            //     })->count();
-
-            //     if ($users==0){
-            //         return redirect('/');
-            //     }
-                
-  
-                
-
-
-             
 
 
                 // $corredor=DB::table('runners')->where('name', request('nombre') );
