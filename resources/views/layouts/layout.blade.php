@@ -71,10 +71,10 @@
       <div class="collapse navbar-collapse" id="navbarText" style="width:100% !important;">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="{{url('/')}}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Carreras</a>
+            <a class="nav-link" href="{{url('theraces')}}">Carreras</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Clasificaciones</a>
