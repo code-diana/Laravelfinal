@@ -103,7 +103,10 @@ class PaymentController extends Controller
 
         public function payPalView(Request $request){
             if($request->session()->has('status')){
-                echo session('status');
+                // echo session('status');
+                return view('corredor.finpago' ,[
+                    'msg' => session('status')
+                ]);
             }
         }
 }

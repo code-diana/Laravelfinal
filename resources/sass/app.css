@@ -121,4 +121,18 @@ iframe {
   width: 700px !important;
   height: 400px !important;
   max-height: 400px !important;
+}
+
+/*****pago*****/
+.rowpaypal {
+  margin: 30px;
+}
+
+#contPaypal {
+  text-align: center;
+  width: 550px;
+  margin: 150px auto;
+  background-color: #b0b0b0;
+  border-radius: 2%;
+  padding: 20px;
 }/*# sourceMappingURL=app.css.map */
