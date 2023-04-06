@@ -180,12 +180,24 @@ class carreraController extends Controller
     }
 
 
-    public function showEditRace(){
-        $carreras = Race::all();
+    public function showEditRace(Request $request){
+        if (isset($_POST['buscador'])){
+            $buscador = $request->input('buscador');
+            $carreras = Race::where('state',1)->orderBy('date', 'ASC')->where('title', 'like', '%' . $buscador . '%')
+                        ->orWhere('km', 'like', '%' . $buscador . '%')
+                        ->orWhere('date', 'like', '%' . $buscador . '%')
+                        ->orWhere('start', 'like', '%' . $buscador . '%')
+                        ->get();
+        }
+        else{
+
+            $carreras = Race::all();
+            
+            //echo $carreras;
+        }
         return view('admin.carreras.editarCarrera',[
             'carreras' => $carreras
         ]);  
-        //echo $carreras;
     }
 
     public function showInfoRace(Request $request){

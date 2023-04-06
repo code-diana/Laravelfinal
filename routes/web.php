@@ -64,6 +64,8 @@ Route::post('anyadirCarrera', [carreraController::class , 'addRace']);
 
 //cambiar estado carrera
 Route::get('editarCarrera', [carreraController::class , 'showEditRace'])->name('editarCarrera');
+Route::post('editarCarrera', [carreraController::class , 'showEditRace'])->name('editarCarrera');
+
 Route::get('estadoCarrera/{id}', [carreraController::class , 'changeState']);
 
 //editar datos carrera
