@@ -1,9 +1,13 @@
+@extends('layouts.layout')
+{{-- Para escribir el contenido de la pagina, hay que hacer una section con mismo nombre del yield en el archivo layout.balde.php  --}}
+@section('content')
 <style>
     td,th{border: 1px solid;}
     td{width: 80px}
     table{width: 1200px;margin: auto;text-align: center;}
     img{width: 50%;height: 50%}
 </style>
+<div class="container">
 <h1>Editar Mapa</h1>
 <form action="{{$carreras['id']}}" method="POST" enctype="multipart/form-data">
     @csrf
@@ -21,5 +25,6 @@
       </div>
     </div>
 </form>   
-
+</div>
 <a href="{{url('/paginaPrincipal')}}">Volver atras</a>
+@endsection

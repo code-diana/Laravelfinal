@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 {{-- Para escribir el contenido de la pagina, hay que hacer una section con mismo nombre del yield en el archivo layout.balde.php  --}}
 @section('content')
+<div class="container">
     <div class="divCarreras">
         <h1>Página principal</h1>
 
@@ -84,5 +85,6 @@
             }?>
             @endforeach
         </div>
+    </div>
 
 @endsection

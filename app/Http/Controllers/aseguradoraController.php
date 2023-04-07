@@ -28,7 +28,7 @@ class aseguradoraController extends Controller
             }
             else{
                 $insurance->name = $_POST['insuranceName'];
-                $insurance->address = $_POST['insuranceAdress'];
+                $insurance->address = $_POST['insuranceAddress'];
                 $insurance->price = $_POST['price'];
                 $insurance->save();
                 ?>
@@ -67,9 +67,11 @@ class aseguradoraController extends Controller
         if ($request->isMethod('post')){
             $insurance->CIF = $request->input('cif');
             $insurance->name = $request->input('insuranceName');
-            $insurance->address = $request->input('insuranceAdress');
+            $insurance->address = $request->input('insuranceAddress');
             $insurance->save();
             $insurance = Insurance::all();
+            $mensaje = "¡La aseguradora ha sido modificada correctamente!";
+            session()->flash('mensaje', $mensaje);
             return redirect()->route('mostrarTodosAs' , ['carreras'=>$insurance]); 
         }      
         else{

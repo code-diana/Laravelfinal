@@ -1,25 +1,64 @@
-<h1>Añadir un asegurador</h1>
+@extends('layouts.layout')
 
-<form action="anyadirAseguradora" method="POST">
-    @csrf
-    <table>
-        <tr>
-            <td>CIF</td>
-            <td><input type="text" name="cif" id="cif" maxlength="9" required></td>
-        </tr>
-        <tr>
-            <td>Nombre</td>
-            <td><input type="text" name="insuranceName" id="insuranceName" required></td>
-        </tr>
-        <tr>
-            <td>Dirección</td>
-            <td><input type="text" name="insuranceAdress" id="insuranceAdress" required></td>
-        </tr>
-        <tr>
-            <td>Precio</td>
-            <td><input type="number" name="price" id="insuranceAdress" required></td>
-        </tr>
-    </table>
-    <input type="submit" value="Crear" name="create">
-</form>
-<a href="{{url('/paginaPrincipal')}}">Pagina principal</a>
+@section('content')
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="{{url('mostrarTodosAs')}}" class="btn btn-primary float-right mr-3" style="margin-top: 30px;">Ver aseguradoras</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card" style="border:3px solid #eee">
+                    <div class="card-header" style="text-align: center"><h1>Añadir nueva aseguradora</h1></div>
+
+                    <div class="card-body">
+                        <form action="anyadirAseguradora" method="POST">
+                            @csrf
+                            <div class="form-group row">
+                                <label for="cif" class="col-md-4 col-form-label text-md-right">CIF</label>
+
+                                <div class="col-md-6">
+                                    <input type="text" name="cif" id="cif" class="form-control" minlength="9" maxlength="9" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="insuranceName" class="col-md-4 col-form-label text-md-right">Nombre</label>
+
+                                <div class="col-md-6">
+                                    <input type="text" name="insuranceName" id="insuranceName" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="insuranceAddress" class="col-md-4 col-form-label text-md-right">Dirección</label>
+
+                                <div class="col-md-6">
+                                    <input type="text" name="insuranceAddress" id="insuranceAddress" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="insuranceAddress" class="col-md-4 col-form-label text-md-right">Precio base</label>
+
+                                <div class="col-md-6">
+                                    <input type="number" name="price" id="insurancePrice" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row mb-0">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary" name="create">Crear</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="{{url('/paginaPrincipal')}}">Pagina principal</a>
+@endsection

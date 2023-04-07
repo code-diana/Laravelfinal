@@ -1,4 +1,9 @@
 @import url("https://fonts.bunny.net/css?family=Nunito");
+* {
+  font-family: unset;
+  letter-spacing: 1px;
+}
+
 main {
   background-image: linear-gradient(rgba(110, 108, 108, 0.74), rgba(131, 127, 127, 0.55)), url("../img/racer.jpg");
   background-size: cover;
@@ -9,6 +14,34 @@ main {
   -moz-box-shadow: 10px 10px 5px #ccc;
   -webkit-box-shadow: 10px 10px 5px #ccc;
   -khtml-box-shadow: 10px 10px 5px #ccc;
+  position: relative;
+  border-radius: 8px;
+}
+
+.titleAdmin {
+  position: relative;
+  top: 120px;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  color: #f4ece6;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.logout a {
+  color: black !important;
 }
 
 .options {
@@ -83,7 +116,6 @@ rect {
 }
 
 .btn-group {
-  width: 80%;
   margin: auto;
 }
 
@@ -303,14 +335,30 @@ h2 {
   background-color: #f5f5f5;
 }
 
-.form-control {
-  width: 20% !important;
-}
-
-.hhh {
-  color: pink;
-}
-
-rect {
+.qrTable rect {
   fill: white;
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+}
+.btn-primary {
+  background-color: #687ca0 !important;
+  border-color: white !important;
 }/*# sourceMappingURL=app.css.map */

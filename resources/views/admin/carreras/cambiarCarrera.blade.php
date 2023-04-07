@@ -7,6 +7,7 @@
     table{width: 1200px;margin: auto;text-align: center;}
     img{width: 50%;height: 50%}
 </style>
+<div class="container">
 <h1>Editar carrera</h1>
 <form action="{{$carreras['id']}}" method="POST">
     @csrf
@@ -72,6 +73,6 @@
       </div>
     </div>
 </form>   
-
+</div>
 <a href="{{url('/paginaPrincipal')}}">Volver atras</a>
 @endsection

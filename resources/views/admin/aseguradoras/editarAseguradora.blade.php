@@ -1,22 +1,48 @@
-<h1>Editar asegurador</h1>
+@extends('layouts.layout')
+@section('content')
+    <div class="container" style="margin-top: 50px;">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card" style="border:3px solid #eee">
+                    <div class="card-header" style="text-align: center"><h1>Editar aseguradora</h1></div>
 
-<form action="{{$insurance['id']}}" method="POST">
-    @csrf
-    <table>
-        <tr>
-            <td>CIF</td>
-            <td><input type="text" name="cif" id="cif" value="{{$insurance['CIF']}}" readonly></td>
-        </tr>
-        <tr>
-            <td>Nombre</td>
-            <td><input type="text" name="insuranceName" id="insuranceName" value="{{$insurance['name']}}"></td>
-        </tr>
-        <tr>
-            <td>Dirección</td>
-            <td><input type="text" name="insuranceAdress" id="insuranceAdress" value="{{$insurance['address']}}"></td>
-        </tr>
-    </table>
-    <input type="submit" value="Editar" name="edit">
-</form>   
+                    <div class="card-body">
+                        <form action="{{$insurance['id']}}" method="POST">
+                            @csrf
+                            <div class="form-group row">
+                                <label for="cif" class="col-md-4 col-form-label text-md-right">CIF</label>
 
-<a href="{{url('/paginaPrincipal')}}">Pagina principal</a>
+                                <div class="col-md-6">
+                                    <input type="text" name="cif" id="cif" value="{{$insurance['CIF']}}" readonly class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="insuranceName" class="col-md-4 col-form-label text-md-right">Nombre</label>
+
+                                <div class="col-md-6">
+                                    <input type="text" name="insuranceName" id="insuranceName" value="{{$insurance['name']}}" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="insuranceAddress" class="col-md-4 col-form-label text-md-right">Dirección</label>
+
+                                <div class="col-md-6">
+                                    <input type="text" name="insuranceAddress" id="insuranceAddress" value="{{$insurance['address']}}" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group row mb-0">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary" name="edit">Editar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="{{url('/paginaPrincipal')}}">Pagina principal</a>
+@endsection
