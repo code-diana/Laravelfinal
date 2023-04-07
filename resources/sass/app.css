@@ -361,4 +361,32 @@ h2 {
 .btn-primary {
   background-color: #687ca0 !important;
   border-color: white !important;
+}
+
+/*****pagina principal****/
+.portada {
+  width: 100% !important;
+  max-height: 600px;
+}
+
+.titulo {
+  POSITION: absolute;
+  top: 300px;
+  color: #000;
+  right: 0;
+  left: 0;
+  align-items: center;
+  text-align: center;
+  font-size: 52px;
+}
+
+.portadabutton {
+  position: absolute;
+  top: 350px;
+  color: #000;
+  right: 0;
+  left: 0;
+  align-items: center;
+  text-align: center;
+  font-size: 52px;
 }/*# sourceMappingURL=app.css.map */

@@ -1,6 +1,13 @@
 @extends('layouts.layout')
 {{-- Para escribir el contenido de la pagina, hay que hacer una section con mismo nombre del yield en el archivo layout.balde.php  --}}
 @section('content')
+<div id="portada">
+    <img class="portada" src="../resources/img/portada1.png">
+    <h1 class="titulo">BIKEROLL</h1>
+    <!-- <button type="button" class="btn btn-primary portadabutton">Carreras</button>
+    <button type="button" class="btn btn-primary portadabutton">Sponsors</button> -->
+</div>
+<div >
 <div class="container">
     <div class="divCarreras">
         <h1>Página principal</h1>
@@ -86,5 +93,5 @@
             @endforeach
         </div>
     </div>
-
+</div>
 @endsection

@@ -353,3 +353,34 @@ h2 {
     background-color: #687ca0 !important;
     border-color: white !important;
 }
+
+/*****pagina principal****/
+.portada{
+    width:100% !important;
+    max-height: 600px;
+    // clip-path: inset(300px 0px 100px 0px);
+    // position:relative;
+    // top:-300px;
+}
+
+.titulo{
+    POSITION: absolute;
+    top: 300px;
+    color: #000;
+    right: 0;
+    left: 0;
+    align-items: center;
+    text-align: center;
+    font-size:52px;
+}
+
+.portadabutton{
+    position: absolute;
+    top: 350px;
+    color: #000;
+    right: 0;
+    left: 0;
+    align-items: center;
+    text-align: center;
+    font-size:52px;
+}
