@@ -57,7 +57,7 @@
             @foreach($fin as $f)
                 <?php
                 if($cont!=2){
-                    $id = $race['id'];
+                    $id = $f['id'];
 
                     $fecha_actual = strtotime(date("d-m-Y H:i:00",time()));
                     $newDate = strtotime($f['date']); 

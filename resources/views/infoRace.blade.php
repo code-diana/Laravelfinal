@@ -55,7 +55,13 @@ if ($intervalo->m<1 && $intervalo->d<30 && $newDate>$fecha_actual){ ?>
 
 <h3><a href="{{ url('/altaCorredor/'.$id) }}">Darse de alta</a></h3>
 
-<?php } ?>
+<?php } 
+
+else{
+    echo '<button type="button" class="btn btn-primary">FINALIZADA</button>';
+    echo '<h3> <a class="btn btn-primary" href="#" role="button">Ver fotografias</a> </h3>';
+}
+?>
     </div>
 </div>
 
