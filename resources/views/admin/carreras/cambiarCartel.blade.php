@@ -1,3 +1,6 @@
+@extends('layouts.layout')
+{{-- Para escribir el contenido de la pagina, hay que hacer una section con mismo nombre del yield en el archivo layout.balde.php  --}}
+@section('content')
 <style>
     td,th{border: 1px solid;}
     td{width: 80px}
@@ -23,3 +26,4 @@
 </form>   
 
 <a href="{{url('/paginaPrincipal')}}">Volver atras</a>
+@endsection

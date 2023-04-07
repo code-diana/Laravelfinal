@@ -51,7 +51,7 @@ a {
 
 .info {
   color: white;
-  background-color: teal;
+  background-color: rgb(140, 233, 233);
   padding: 10px;
   width: -moz-max-content;
   width: max-content;
@@ -135,4 +135,182 @@ iframe {
   background-color: #b0b0b0;
   border-radius: 2%;
   padding: 20px;
+}
+
+.carousel-item-next:not(.carousel-item-left),
+.carousel-item-prev:not(.carousel-item-right) {
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-inner {
+  height: 480px;
+}
+
+.carousel-inner {
+  padding: 30px 50px;
+  border: 1px solid rgb(158, 158, 158);
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  -khtml-box-shadow: 10px 10px 5px #ccc;
+  margin: 30px 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #101632 !important;
+}
+
+.contenedorPaginaPrincipal {
+  padding: 30px;
+}
+
+.divisor {
+  border-bottom: 5px solid #687ca0;
+  margin: 60px auto 0 auto;
+  width: 60%;
+}
+
+.divSponsors {
+  margin: 50px 0;
+  padding: 20px 40px 40px 40px;
+}
+
+.titleSpon {
+  color: #101632;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 40px auto;
+  font-size: 70px;
+}
+
+h2 {
+  margin: 50px 0;
+}
+
+.file-drop-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 450px;
+  max-width: 100%;
+  padding: 25px;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.choose-file-button {
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.file-message {
+  font-size: small;
+  font-weight: 300;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+/* -------------------------------- */
+/* Bootstrap 5 CSS and icons included */
+:root {
+  --colorPrimaryNormal: #00b3bb;
+  --colorPrimaryDark: #00979f;
+  --colorPrimaryGlare: #00cdd7;
+  --colorPrimaryHalf: #80d9dd;
+  --colorPrimaryQuarter: #bfecee;
+  --colorPrimaryEighth: #dff5f7;
+  --colorPrimaryPale: #f3f5f7;
+  --colorPrimarySeparator: #f3f5f7;
+  --colorPrimaryOutline: #dff5f7;
+  --colorButtonNormal: #00b3bb;
+  --colorButtonHover: #00cdd7;
+  --colorLinkNormal: #00979f;
+  --colorLinkHover: #00cdd7;
+}
+
+.upload_dropZone {
+  color: #0f3c4b;
+  background-color: var(--colorPrimaryPale, #c8dadf);
+  outline: 2px dashed var(--colorPrimaryHalf, #c1ddef);
+  outline-offset: -12px;
+  transition: outline-offset 0.2s ease-out, outline-color 0.3s ease-in-out, background-color 0.2s ease-out;
+}
+
+.upload_dropZone.highlight {
+  outline-offset: -4px;
+  outline-color: var(--colorPrimaryNormal, #0576bd);
+  background-color: var(--colorPrimaryEighth, #c8dadf);
+}
+
+.upload_svg {
+  fill: var(--colorPrimaryNormal, #0576bd);
+}
+
+.btn-upload {
+  color: #fff;
+  background-color: var(--colorPrimaryNormal);
+}
+
+.btn-upload:hover,
+.btn-upload:focus {
+  color: #fff;
+  background-color: var(--colorPrimaryGlare);
+}
+
+.upload_img {
+  width: calc(33.333% - 0.6666666667rem);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#dropzone {
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #999;
+  line-height: 200px;
+  transition: background-color 0.3s ease;
+}
+
+#dropzone.dragover {
+  background-color: #f5f5f5;
+}
+
+.form-control {
+  width: 20% !important;
+}
+
+.hhh {
+  color: pink;
+}
+
+rect {
+  fill: white;
 }/*# sourceMappingURL=app.css.map */

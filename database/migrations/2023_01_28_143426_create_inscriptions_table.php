@@ -20,7 +20,7 @@ class CreateInscriptionsTable extends Migration
             $table->unsignedBigInteger('id_insurances')->nullable();
             $table->integer('dorsal')->nullable();
             $table->text('PayPal_email');
-            $table->date('finish_time')->nullable();
+            $table->time('finish_time')->nullable();
 
             //Foreign Keys
             $table->foreign('id_insurances')->references('id')->on('insurances');

@@ -67,6 +67,17 @@ class patronizeController extends Controller
         //     'facturaSponsor' => $facturaSponsor
         // ]);
     }
+
+    public function carreraSponsor(Request $request){
+        $id = $request->id;
+        $races = DB::table('patronize')
+        ->select('patronize.*' , 'races.*')
+        ->join('races', 'patronize.race_id', '=', 'races.id')
+        ->where('sponsor_id', '=', $id)
+        ->get();
+
+        return view('admin.sponsors.carreraSponsor' , ['races' => $races , 'id' =>$id]);
+    }
 }
 
 ?>

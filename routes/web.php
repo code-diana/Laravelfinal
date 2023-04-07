@@ -95,7 +95,8 @@ Route::get('runnersRace/{id}' , [inscripcionController::class , 'showRunners']);
 Route::post('runnersRace/{id}' , [inscripcionController::class , 'showRunners']);
 
 //Sponsors-Carrera
-Route::get('sponsorCarrera' , [patronizeController::class , 'showSponsors']);
+Route::get('sponsorCarrera' , [patronizeController::class , 'showSponsors'])->middleware('admin');
+Route::get('carreras-sponsor/{id}', [patronizeController::class , 'carreraSponsor'])->middleware('admin');
 
 //Mostrar informacion carrera
 Route::get('infoRace/{id}' , [carreraController::class , 'showInfoRace']);
@@ -113,7 +114,10 @@ Route::post('aseguradoraC/{id}', [aseguradoraController::class, 'precioCarrera']
 Route::post('estadoCarrera/{id}', [aseguradoraController::class, 'precioCarrera']);
 
 //qrcarreras
-Route::get('qr/{id}', [carreraController::class , 'qr']);
+Route::get('generarQr/{id}', [inscripcionController::class , 'generarQr']);
+
+//Mostrar datos qr
+Route::get('datosQr/{id_runner}/{id_race}', [inscripcionController::class , 'mostrarDatosQr'])->name('datosQr');
 
 //Elegir carreras de sponsor
 Route::get('selectRaces/{id}' , [patronizeController::class , 'showRaces']);
@@ -134,4 +138,7 @@ Route::get('download-pdf/{id}', [patronizeController::class, 'downloadPdf'])->na
 //ver todas las carreras activas
 Route::get('theraces' , [carreraController::class , 'allrace']);
 Route::post('theraces' , [carreraController::class , 'allrace']);
+
+//Clasificaciones
+Route::get('clasificacionSexo/{id}', [carreraController::class, 'clasificacionSexo'])->name('clasi-sexo');
 ?>

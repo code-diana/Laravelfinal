@@ -1,12 +1,12 @@
-<style>
-    table{border-collapse: collapse}
-    td,tr,th{border:1px solid}
-</style>
-
-<h1>Corredores apuntados en la carrera {{$id}}</h1>
+@extends('layouts.layout')
+@section('content')
+<?php
+    $id_race = $id;
+?>
+<h1>Corredores apuntados en la carrera {{$id_race}}</h1>
 
 {{-- ------------------- Buscador ------------------------------------------- --}}
-<form action="{{$id}}" method="post">
+<form action="{{$id_race}}" method="post">
     @csrf
     <input type="text" name="buscador" id="busc">
     <input type="submit" value="Buscar" name="buscButton">
@@ -24,7 +24,9 @@
             <th>Dirección</th>
             <th>Pro</th>
             <th>Numero federación</th>
+            <th>Dorsal</th>
             <th>Puntos</th>
+            <th>Generar QR</th>
         </tr>
         @foreach($runners as $runner)
             @php
@@ -51,10 +53,22 @@
                     <td>No</td>
                     <td>----</td>
                 @endif
+                <td>{{$runner->dorsal}}</td>
                 <td>{{$runner->points}}</td>
+                <?php
+                    $id_runner = $runner->id;
+                    //Link de la pagina en real
+                    $url = route('datosQr' , ['id_runner' => $id_runner , 'id_race' => $id_race]);
+                    //$url = "http://www.dianasalma-pruebas.com.mialias.net/bikeroll/public/datosQr/$id";
+                    echo $url;
+                ?>
+                <td>{!! QrCode::size(100)->generate($url) !!}</td>
+
             </tr>
         @endforeach
     </table>
 @endif
 
 <a href="{{url('/paginaPrincipal')}}">Pagina principal</a>
+
+@endsection

@@ -14,8 +14,7 @@ class adminController extends Controller
             $passwd=$_POST['passwd'];
             //Si existe la clave primaria
             if (Admin::where('user_name', $user_name )->where('passwd',$passwd)->exists()) {
-                $_POST['email'] = session('admin');
-                $request->session()->start();
+                $request->session()->put('admin', $user_name);
                 return redirect('/paginaPrincipal');
             }
             else{
@@ -33,6 +32,6 @@ class adminController extends Controller
 
     public function logout(Request $request){
         $request->session()->flush();
-        return redirect('/');
+        return redirect('/formAdmin');
     }
 }

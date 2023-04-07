@@ -1,4 +1,6 @@
-
+@extends('layouts.layout')
+{{-- Para escribir el contenido de la pagina, hay que hacer una section con mismo nombre del yield en el archivo layout.balde.php  --}}
+@section('content')
 <h1>Añadir carrera</h1>
 
 <form action="anyadirCarrera" method="POST" accept-charset="UTF-8" class="formaddcarrera" enctype="multipart/form-data">
@@ -31,7 +33,7 @@
     </div>
 
     <div class="form-group row">
-        <label for="participantes" class="col-sm-2 col-form-label">Participantes màximos</label>
+        <label for="participantes" class="col-sm-2 col-form-label">Participantes máximos</label>
         <div class="col-sm-10">
           <input type="number" class="form-control" id="participantes" name="number_participants" max="9999" required>
         </div>
@@ -66,7 +68,7 @@
     </div>
 
     <div class="form-group row">
-        <label for="coste" class="col-sm-2 col-form-label">Coste depatrocinio</label>
+        <label for="coste" class="col-sm-2 col-form-label">Coste de patrocinio</label>
         <div class="col-sm-10">
           <input type="number" class="form-control" id="coste" name="price"  max="99" required>
         </div>
@@ -80,3 +82,4 @@
 </form>
 
 <p><a href="{{url('paginaPrincipal')}}">Volver atrás</a></p>
+@endsection

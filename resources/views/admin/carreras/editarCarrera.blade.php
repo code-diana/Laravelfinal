@@ -16,7 +16,7 @@
 </form>
 
 <?php if ($carreras->count()==0){
-    echo '<p> No hay carreras que coincidan </p>';
+    echo '<p> Actualmente no hay carreras que mostrar </p>';
 }
 else{?>
     <table style="border-collapse:collapse">
@@ -36,7 +36,7 @@ else{?>
             <th>Subir fotos</th>
             <th>Ver fotos</th>
             <th>Gestionar aseguradoras</th>
-            <th>Generar QR</th>
+            <th>Corredores apuntados</th>
 
         </tr>
         @foreach($carreras as $row)
@@ -85,8 +85,7 @@ else{?>
 
                 <td><a href="aseguradoraC/{{$id}}"><img src="../resources/img/edit.png" alt=""></a></td>
 
-                <td><a href="qr/{{$id}}"><img src="../resources/img/edit.png" alt=""></a></td>
-
+                <td><a href="runnersRace/{{$id}"><img src="../resources/img/edit.png" alt=""></a></td>
 
             </tr>
         @endforeach

@@ -13,6 +13,9 @@
         padding: 10px 20px; 
         margin-left: 50px;
     }
+    .mapviews{
+        width:50px !important;
+    }
 </style>
 <h1>Carreras</h1>
 
@@ -33,10 +36,12 @@
     <div>
         <?php
             $id = $race->id;
-            $image=preg_replace('([^A-Za-z0-9 ])', '', $race->image);
+            // $image=preg_replace('([^A-Za-z0-9 ])', '', $race->image);
             $date = new DateTime($race->date);
         ?>
-        <a href="runnersRace/{{$id}}"><img src="../resources/img/<?php echo strtolower($image) ?>.jpg" alt=""></a>
+
+       <a href="runnersRace/{{$id}}" class="mapviewss"><?php echo $race['image']?></a>
+
         {{-- loop->index es una variable de blade  --}}
         <h2>Carrera {{$loop->index+1}}</h2>
         <p>{{$date->format('d/m/Y')}}</p>
