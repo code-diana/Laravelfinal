@@ -250,15 +250,15 @@ class carreraController extends Controller
         if (isset($_POST['buscador'])){
             $buscador = $request->input('buscador');
             $races = Race::where('state',1)->orderBy('date', 'ASC')->where('title', 'like', '%' . $buscador . '%')
-                        ->orWhere('km', 'like', '%' . $buscador . '%')
-                        ->orWhere('date', 'like', '%' . $buscador . '%')
-                        ->orWhere('start', 'like', '%' . $buscador . '%')
+                        // ->orWhere('km', 'like', '%' . $buscador . '%')
+                        // ->orWhere('date', 'like', '%' . $buscador . '%')
+                        // ->orWhere('start', 'like', '%' . $buscador . '%')
                         ->get();
 
             $fin= Race::where('state',1)->orderBy('date', 'DESC')->where('title', 'like', '%' . $buscador . '%')
-            ->orWhere('km', 'like', '%' . $buscador . '%')
-            ->orWhere('date', 'like', '%' . $buscador . '%')
-            ->orWhere('start', 'like', '%' . $buscador . '%')
+            // ->orWhere('km', 'like', '%' . $buscador . '%')
+            // ->orWhere('date', 'like', '%' . $buscador . '%')
+            // ->orWhere('start', 'like', '%' . $buscador . '%')
             ->get();
         }
 

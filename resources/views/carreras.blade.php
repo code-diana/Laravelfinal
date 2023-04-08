@@ -46,7 +46,14 @@
 
        
             <div class="divCarreras">
-                <h1>Próximas Carreras</h1>
+            <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 style="display:inline">Próximas Carreras</h1>
+                        </div>
+                    </div>
+            </div>
+            <hr>
 
         
                 <div class="row">
@@ -62,7 +69,7 @@
 
                         if ($newDate>$fecha_actual){
                         ?>
-                         <div class="col-lg-4 col-md-6" style="margin:20px 0 20px 0;">
+                         <div class="col-lg-3 col-md-6" id="cards" style="margin:20px 0 20px 0;">
                             <div class="card h-100">
                             <div class="card-header">
                                 <h5 class="card-title">{{$race['title']}}</h5>
@@ -100,7 +107,14 @@
         <div class="container">
             <!-- Finalizadas -->
             <div class="row">
-                    <h1>Últimas carreras finalizadas</h1>
+            <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 style="display:inline">Últimas carreras finalizadas</h1>
+                        </div>
+                    </div>
+            </div>
+            <hr>
                     <?php $cont=0; ?>
                     @foreach($fin as $f)
                         <?php
@@ -117,14 +131,25 @@
                             //Cogemos las carreras del ultimo mes con limite de 2, lo cogemos por descendente por lo tanto siempre saldrá la mas cercana primero
                             if ($newDate<$fecha_actual && $intervalo->m<=3){
                         ?>
-                        <div class="col-lg-6">
-                            <?php $prom=preg_replace('([^A-Za-z0-9 ])', '', $f['promotion'])?>
-                            <img class="carrerasproximas"  src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="">
-                            <h2>{{$f['title']}}</h2>
-                            <p>{{$f['description']}}</p>
-                            <p>{{$f['date']}}</p>
-                            <a href="infoRace/{{$id}}"><div class="info but"><p>Más información</p></div></a>
-                        </div>
+                        <div class="col-lg-3 col-md-6" id="cards">
+                                        <div class="card h-100">
+                                        <div class="card-header">
+                                            <h5 class="card-title">{{$f['title']}}</h5>
+                                        </div>
+                                        <div class="card-body">
+                                        <?php $prom=preg_replace('([^A-Za-z0-9 ])', '', $f['promotion'])?>
+                                        <p class="card-text" style="max-height:500px !important;text-align:center"><img src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="" style="margin:0 auto;max-height:300px !important;max-width:500px;"></p>
+                                        <p class="card-text"><strong> </strong> {{$f['description']}}</p>
+                                        <p class="card-text"><strong>Fecha:</strong> {{$f['date']}}</p>
+
+                                        <a href="infoRace/{{$id}}" class="btn btn-primary"><i class="bi bi-pencil-square"></i>Más información</a>
+
+
+
+                                        </div>
+                                        </div>
+                    
+                    </div>
                             <?php 
                         //Limit 2
                         $cont++;

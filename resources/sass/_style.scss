@@ -496,3 +496,12 @@ h2 {
         font-weight: 500;
     }
 }
+
+#cards .card-body .btn{
+    position: absolute !important;
+    bottom: 10px !important;
+}
+
+#cards .card-body{
+    padding-bottom:60px !important;
+}

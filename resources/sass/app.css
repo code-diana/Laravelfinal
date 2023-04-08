@@ -484,4 +484,13 @@ h2 {
   text-transform: uppercase;
   margin: 0 15px 0 5px;
   font-weight: 500;
+}
+
+#cards .card-body .btn {
+  position: absolute !important;
+  bottom: 10px !important;
+}
+
+#cards .card-body {
+  padding-bottom: 60px !important;
 }/*# sourceMappingURL=app.css.map */
