@@ -82,7 +82,12 @@
                         <p class="card-text"><strong> </strong> {{$race['description']}}</p>
                         <p class="card-text"><strong>Salida:</strong> {{$race['start']}}</p>
                         <p class="card-text"><strong>Distancia:</strong> {{$race['km']}} km</p>
-                        <p class="card-text"><strong>Fecha:</strong> {{$race['date']}}</p>
+
+                        <?php
+                        $time = strtotime($race['date']);
+                        $format = date('d/m/Y H:i',$time);
+                        ?>
+                        <p class="card-text"><strong>Fecha:</strong> <?php echo $format ?></p>
 
                         
                         <!-- <p class="card-text"><a href="infoRace/{{$id}}"><div class="btn btn-primary but info" style="text-align:center">Más información</div></a></p> -->
@@ -124,7 +129,7 @@
                     ?>
                     <!-- <div class="col-lg-4 col-sm-12 logos"> -->
                         <?php $image=preg_replace('([^A-Za-z0-9 ])', '', $sponsor['logo'])?>
-                        <a href="#" style="display:inline !important"><img class="logo" src="../resources/img/<?php echo strtolower($image) ?>.png" alt=""></a>
+                        <a  style="display:inline !important"><img class="logo" src="../resources/img/<?php echo strtolower($image) ?>.png" alt=""></a>
                     <!-- </div> -->
                     <?php } $log++; ?>
                 @endforeach
@@ -172,7 +177,11 @@
                                         <?php $prom=preg_replace('([^A-Za-z0-9 ])', '', $f['promotion'])?>
                                         <p class="card-text" style="max-height:500px !important;text-align:center"><img src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="" style="margin:0 auto;max-height:300px !important;max-width:500px;"></p>
                                         <p class="card-text"><strong> </strong> {{$f['description']}}</p>
-                                        <p class="card-text"><strong>Fecha:</strong> {{$f['date']}}</p>
+                                        <?php
+                                        $time = strtotime($f['date']);
+                                        $format = date('d/m/Y H:i',$time);
+                                        ?>
+                                        <p class="card-text"><strong>Fecha:</strong> <?php echo $format ?></p>
 
                                         <a href="infoRace/{{$id}}" class="btn btn-primary"><i class="bi bi-pencil-square"></i>Más información</a>
 
