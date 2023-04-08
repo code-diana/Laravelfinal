@@ -102,7 +102,7 @@
             </div>
         </div>
 </div>
-<div style="background-color:#">
+<div style="background-color:#f0f4fa;" id="carrerasfin">
         <!-- Fotos -->
         <div class="container">
             <!-- Finalizadas -->
