@@ -77,15 +77,15 @@
 </head>
 <body>
     {{-- navbar --}}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#"><img src="../resources/img/bicicleta-de-montana.png" style="width:50px;"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="header">
+      <a class="navbar-brand" href="#"><img src="../resources/img/Logo.png" style="width:80px;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText" style="width:100% !important;">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="{{url('/')}}">Home</a>
+            <a class="nav-link" href="{{url('/')}}">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{url('theraces')}}">Carreras</a>

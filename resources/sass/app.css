@@ -469,4 +469,18 @@ h2 {
 
 #about-section {
   margin: -10px 0 -60px 0;
+}
+
+#header {
+  background-color: #fff !important;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+#header a {
+  color: #000 !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 15px 0 5px;
+  font-weight: 500;
 }/*# sourceMappingURL=app.css.map */
