@@ -62,14 +62,29 @@
 
                         if ($newDate>$fecha_actual){
                         ?>
-                        <div class="col-lg-3">
-                            <?php $prom=preg_replace('([^A-Za-z0-9 ])', '', $race['promotion'])?>
-                            <img class="carrerasproximas" src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="">
-                            <h2>{{$race['title']}}</h2>
-                            <p>{{$race['description']}}</p>
-                            <p>{{$race['date']}}</p>
-                            <a href="infoRace/{{$id}}"><div class="info but"><p>Más información</p></div></a>
-                        </div>
+                         <div class="col-lg-4 col-md-6" style="margin:20px 0 20px 0;">
+                            <div class="card h-100">
+                            <div class="card-header">
+                                <h5 class="card-title">{{$race['title']}}</h5>
+                            </div>
+                            <div class="card-body">
+                                <?php $prom=preg_replace('([^A-Za-z0-9 ])', '', $race['promotion'])?>
+                                <p class="card-text" style="max-height:300px !important;text-align:center"><img src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="" style="margin:0 auto;max-height:250px !important;"></p>
+                                
+                                <p class="card-text"><strong> </strong> {{$race['description']}}</p>
+                                <p class="card-text"><strong>Salida:</strong> {{$race['start']}}</p>
+                                <p class="card-text"><strong>Distancia:</strong> {{$race['km']}} km</p>
+                                <p class="card-text"><strong>Fecha:</strong> {{$race['date']}}</p>
+
+                                
+                                <!-- <p class="card-text"><a href="infoRace/{{$id}}"><div class="btn btn-primary but info" style="text-align:center">Más información</div></a></p> -->
+                                <!-- <div class="card-footer"> -->
+                                <a href="infoRace/{{$id}}" class="btn btn-primary"><i class="bi bi-pencil-square"></i>Más información</a>
+                                <!-- </div> -->
+                            </div>
+                            
+                            </div>
+                            </div>
                         <?php 
                         $limit++;
                         }

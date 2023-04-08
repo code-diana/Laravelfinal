@@ -58,9 +58,12 @@
 
     <?php } 
 
-    else{
+    else if($newDate<$fecha_actual){
         echo '<button type="button" class="btn btn-primary">FINALIZADA</button>';
         echo '<h3> <a class="btn btn-primary" href="#" role="button">Ver fotografias</a> </h3>';
+    }
+    else{
+        echo '<button type="button" class="btn btn-primary">El periodo de inscripción aún no ha empezado</button>';
     }
     ?>
         </div>
