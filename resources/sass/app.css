@@ -98,10 +98,30 @@ a {
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  max-width: 200px;
+  max-height: 200px;
 }
 
+.logos {
+  display: inline;
+}
+
+.logosmobile {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1000px) {
+  .logosmobile {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+  img {
+    margin: 20px;
+  }
+}
 .nav li:nth-child(4) a {
   font-weight: bold;
   color: green !important;
@@ -366,21 +386,47 @@ h2 {
 /*****pagina principal****/
 .portada {
   width: 100% !important;
-  max-height: 600px;
+  max-height: 765px;
 }
 
 .titulo {
   POSITION: absolute;
-  top: 300px;
-  color: #000;
+  top: 200px;
+  color: #fff;
   right: 0;
   left: 0;
   align-items: center;
   text-align: center;
-  font-size: 52px;
+  font-size: 120px;
 }
 
-.portadabutton {
+.portadabuttonright {
+  margin: 0 auto;
+  right: 0 !important;
+  left: 0 !important;
+  top: 450px !important;
+  max-width: 250px;
+  font-size: 32px !important;
+  background-color: transparent !important;
+}
+
+@media (max-width: 1000px) {
+  .portadabuttonright {
+    display: none !important;
+  }
+  .titulo {
+    display: none !important;
+  }
+  .portada {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .potoaboutwrap {
+    display: none !important;
+  }
+}
+.portadacommon {
   position: absolute;
   top: 350px;
   color: #000;
@@ -389,4 +435,38 @@ h2 {
   align-items: center;
   text-align: center;
   font-size: 52px;
+}
+.portadacommon a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+#carrerasprincipales {
+  padding: 60px 0 30px 0 !important;
+}
+
+.section {
+  padding: 40px 0 30px 0 !important;
+}
+
+.sectionsponsor {
+  padding: 30px 0 20px 0 !important;
+}
+
+.sosmed-horizontal a i {
+  border: 1px solid #070707;
+  border-radius: 50%;
+  color: #070707;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin: auto 3px;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+#about-section {
+  margin: -10px 0 -60px 0;
 }/*# sourceMappingURL=app.css.map */

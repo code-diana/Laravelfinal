@@ -1,12 +1,12 @@
 @extends('layouts.layout')
 @section('content')
 <div class="container">
-    <h1>Información carrera</h1>
+    <h1>Información</h1>
 
     <div class="row">
         {{-- info carrera --}}
         <div class="col-lg-8">
-            <p>Mapa</p>
+            <p>Ruta de la carrera</p>
             <div class="racemap"><?php echo $races['image']?></div>
         </div>
 
@@ -67,8 +67,8 @@
     </div>
 
 
-    <div>
+    <!-- <div>
         <a href="{{url('/')}}">Pagina principal</a>
-    </div>
+    </div> -->
 </div>
 @endsection
