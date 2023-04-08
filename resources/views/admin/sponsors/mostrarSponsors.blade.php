@@ -9,7 +9,7 @@
 @section('content')
     <a href="{{url('/paginaPrincipal')}}">Pagina principal</a>
 
-    <div class="container">
+    <div class="container air">
         <h1 style="margin-top: 30px;">Sponsors</h1>
         <hr>
         <div class="container mt-3">

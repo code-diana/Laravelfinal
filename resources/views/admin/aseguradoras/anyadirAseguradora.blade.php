@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-    <div class="container mt-3">
+    <div class="container mt-3 air">
         <div class="row">
             <div class="col-lg-12">
                 <a href="{{url('mostrarTodosAs')}}" class="btn btn-primary float-right mr-3" style="margin-top: 30px;">Ver aseguradoras</a>

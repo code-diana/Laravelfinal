@@ -7,7 +7,7 @@
 @endif
 {{-- -------------------------------------- --}}
 @section('content')
-    <div class="container">
+    <div class="container air">
         <h1 style="margin-top:30px">Aseguradoras</h1>
         <hr>
         <div class="container mt-3">
