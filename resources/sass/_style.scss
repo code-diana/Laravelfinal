@@ -178,16 +178,21 @@ iframe{
     padding: 20px;
 }
 
-
+.carousel{
+    width: 100%;
+    position: relative;
+    // margin: 0 -50px 0 -50px;
+    overflow: hidden !important;
+}
 .carousel-item-next:not(.carousel-item-left),
 .carousel-item-prev:not(.carousel-item-right) {
     transform: translate3d(0, 0, 0);
 }
 .carousel-inner{
-    height: 480px;
+    height: 450px;
 }
 .carousel-inner{
-    padding: 30px 50px;
+    
     border: 1px solid rgb(158, 158, 158);
     box-shadow: 10px 10px 5px #ccc;
     -moz-box-shadow: 10px 10px 5px #ccc;
