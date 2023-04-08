@@ -2,7 +2,7 @@
 {{-- Para escribir el contenido de la pagina, hay que hacer una section con mismo nombre del yield en el archivo layout.balde.php  --}}
 @section('content')
 <div id="portada">
-    <img class="portada" src="../resources/img/bikerollP.png">
+    <img class="portada" src="../resources/img/Portada.png">
     <div class="textoportada">
     <h1 class="titulo">BIKEROLL</h1>
         <button type="button"  class="btn btn-primary portadabuttonright portadacommon"><a href="#about-section">Visitar la web</a></button>
@@ -77,7 +77,7 @@
                     </div>
                     <div class="card-body">
                         <?php $prom=preg_replace('([^A-Za-z0-9 ])', '', $race['promotion'])?>
-                        <p class="card-text" style="max-height:300px !important;text-align:center"><img src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="" style="margin:0 auto;max-height:300px !important;"></p>
+                        <p class="card-text" style="max-height:300px !important;text-align:center"><img src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="" style="margin:0 auto;max-height:250px !important;"></p>
                         
                         <p class="card-text"><strong> </strong> {{$race['description']}}</p>
                         <p class="card-text"><strong>Salida:</strong> {{$race['start']}}</p>
@@ -85,8 +85,10 @@
                         <p class="card-text"><strong>Fecha:</strong> {{$race['date']}}</p>
 
                         
-                        <p class="card-text"><a href="infoRace/{{$id}}"><div class="btn btn-primary but info" style="text-align:center">Más información</div></a></p>
-                        
+                        <!-- <p class="card-text"><a href="infoRace/{{$id}}"><div class="btn btn-primary but info" style="text-align:center">Más información</div></a></p> -->
+                        <!-- <div class="card-footer"> -->
+                        <a href="infoRace/{{$id}}" class="btn btn-primary"><i class="bi bi-pencil-square"></i>Más información</a>
+                        <!-- </div> -->
                     </div>
                     
                     </div>
@@ -168,11 +170,11 @@
                                         </div>
                                         <div class="card-body">
                                         <?php $prom=preg_replace('([^A-Za-z0-9 ])', '', $f['promotion'])?>
-                                        <p class="card-text" style="max-height:600px !important;text-align:center"><img src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="" style="margin:0 auto;max-height:600px !important;max-width:500px;"></p>
-                                        <p class="card-text"><strong> </strong> {{$race['description']}}</p>
+                                        <p class="card-text" style="max-height:500px !important;text-align:center"><img src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="" style="margin:0 auto;max-height:300px !important;max-width:500px;"></p>
+                                        <p class="card-text"><strong> </strong> {{$f['description']}}</p>
                                         <p class="card-text"><strong>Fecha:</strong> {{$f['date']}}</p>
 
-                                        <p class="card-text"><a href="infoRace/{{$id}}"><div class="btn btn-primary but info" style="text-align:center">Más información</div></a></p>
+                                        <a href="infoRace/{{$id}}" class="btn btn-primary"><i class="bi bi-pencil-square"></i>Más información</a>
 
 
 

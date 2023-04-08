@@ -52,7 +52,7 @@
     $carrera=$races->date;
     $intervalo = $hoy->diff($carrera);
 
-    if ($intervalo->m<1 && $intervalo->d<30 && $newDate>$fecha_actual){ ?>
+    if ($intervalo->m<1 || $intervalo->d<30 && $newDate>$fecha_actual){ ?>
 
     <h3><a href="{{ url('/altaCorredor/'.$id) }}">Darse de alta</a></h3>
 
