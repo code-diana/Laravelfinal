@@ -203,8 +203,18 @@ class carreraController extends Controller
     public function showInfoRace(Request $request){
         $id = $request->id;
         $races = Race::find($id);
+
+        //sponsors
+        $sponsor= DB::table('patronize')
+                ->join('sponsors', 'sponsors.id', '=', 'patronize.sponsor_id')
+                ->where('patronize.race_id', '=', $id)
+                ->where('sponsors.main_plain','=',1)
+                ->where('sponsors.sponsorState','=',1)
+                ->get();
+
         return view('infoRace' , [
-            'races' => $races
+            'races' => $races,
+            'sponsors'=>$sponsor
         ]);
     }
 

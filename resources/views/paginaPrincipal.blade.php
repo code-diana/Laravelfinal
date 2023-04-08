@@ -24,9 +24,9 @@
                         </p>
                         <p class="description-p text-muted pe-0 pe-lg-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere.</p>
                         <div class="sosmed-horizontal pt-3 pb-3">
-                            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-                            <a href="https://twitter.com/?lang=es"><i class="fa fa-instagram"></i></a>
-                            <a href="https://www.pinterest.es/"><i class="fa fa-pinterest"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                            <a target="_blank" href="https://twitter.com/?lang=es"><i class="fa fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.pinterest.es/"><i class="fa fa-pinterest"></i></a>
                         </div>
                         <a href="#carrerasprincipales" class="btn rey-btn mt-3">Próximas Carreras</a>
                     </div>

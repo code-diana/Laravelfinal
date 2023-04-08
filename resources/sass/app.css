@@ -175,6 +175,22 @@ iframe {
   max-height: 400px !important;
 }
 
+@media (max-width: 1300px) {
+  .racemap iframe {
+    max-width: 500px !important;
+    width: 500px !important;
+    height: 400px !important;
+    max-height: 400px !important;
+  }
+}
+@media (max-width: 500px) {
+  .racemap iframe {
+    max-width: 200px !important;
+    width: 200px !important;
+    height: 200px !important;
+    max-height: 200px !important;
+  }
+}
 /*****pago*****/
 .rowpaypal {
   margin: 30px;
@@ -447,19 +463,23 @@ h2 {
 }
 
 #carrerasprincipales {
-  padding: 60px 0 30px 0 !important;
+  padding: 80px 0 60px 0 !important;
 }
 
 .section {
-  padding: 60px 0 30px 0 !important;
+  padding: 85px 0 60px 0 !important;
 }
 
 .sectionsponsor {
-  padding: 30px 0 20px 0 !important;
+  padding: 30px 0 40px 0 !important;
 }
 
 #carrerasfin {
-  padding: 40px 0 20px 0 !important;
+  padding: 70px 0 60px 0 !important;
+}
+
+.divCarreras {
+  padding: 10px 0 60px 0 !important;
 }
 
 .sosmed-horizontal a i {
@@ -502,4 +522,49 @@ h2 {
 
 #cards .card-body {
   padding-bottom: 60px !important;
+}
+
+.notoday {
+  background-color: rgb(255, 174, 0) !important;
+}
+
+.inscribir {
+  background-color: rgb(94, 209, 94) !important;
+}
+.inscribir a {
+  text-decoration: none;
+  color: #fff;
+}
+.inscribir a:hover {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.finalizada {
+  background-color: rgb(230, 57, 57) !important;
+}
+
+.air {
+  padding-top: 80px;
+}
+
+.navbar-dark .navbar-toggler-icon, .navbar-dark .navbar-toggler {
+  background-color: #ebebeb !important;
+  border-color: #ebebeb !important;
+}
+
+#logosinfo {
+  margin-top: 70px;
+  padding: 10px 0 !important;
+  justify-content: space-evenly;
+  display: flex;
+}
+#logosinfo img {
+  width: 120px !important;
+}
+
+#containerinfo {
+  background-color: #f0f4fa !important;
+  border-radius: 5px !important;
+  padding: 30px 10px 30px 10px;
 }/*# sourceMappingURL=app.css.map */

@@ -98,6 +98,12 @@
                         }
                         ?>
                     @endforeach
+
+                    <?php if ($races->count()==0){
+                        echo '<p> No hay coincidencias </p>';
+                    }
+                    ?>
+
                 </div>
             </div>
         </div>
@@ -138,7 +144,7 @@
                                         </div>
                                         <div class="card-body">
                                         <?php $prom=preg_replace('([^A-Za-z0-9 ])', '', $f['promotion'])?>
-                                        <p class="card-text" style="max-height:500px !important;text-align:center"><img src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="" style="margin:0 auto;max-height:300px !important;max-width:500px;"></p>
+                                        <p class="card-text"style="max-height:300px !important;text-align:center"><img src="../resources/img/<?php echo strtolower($prom) ?>.jpg" alt="" style="margin:0 auto;max-height:250px !important;"></p>
                                         <p class="card-text"><strong> </strong> {{$f['description']}}</p>
                                         <p class="card-text"><strong>Fecha:</strong> {{$f['date']}}</p>
 
@@ -156,6 +162,11 @@
                         } 
                     }?>
                     @endforeach
+
+                    <?php if ($fin->count()==0){
+                        echo '<p> No hay coincidencias </p>';
+                    }
+                    ?>
                 </div>
         </div>
 </div>
