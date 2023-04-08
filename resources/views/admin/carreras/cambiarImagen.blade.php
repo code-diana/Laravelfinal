@@ -7,7 +7,7 @@
     table{width: 1200px;margin: auto;text-align: center;}
     img{width: 50%;height: 50%}
 </style>
-<div class="container">
+<div class="container air">
 <h1>Editar Mapa</h1>
 <form action="{{$carreras['id']}}" method="POST" enctype="multipart/form-data">
     @csrf

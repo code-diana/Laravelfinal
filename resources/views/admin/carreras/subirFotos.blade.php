@@ -4,6 +4,7 @@
     table{width: 1200px;margin: auto;text-align: center;}
     img{width: 50%;height: 50%}
 </style>
+<div class="container air">
 <h1>Subir fotos de la carrera {{$carreras['id']}}</h1>
 <form action="{{$carreras['id']}}" method="POST" enctype="multipart/form-data">
     @csrf
@@ -23,3 +24,4 @@
 </form>   
 
 <a href="{{url('/paginaPrincipal')}}">Volver atras</a>
+</div>

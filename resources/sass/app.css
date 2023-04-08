@@ -568,4 +568,8 @@ h2 {
   background-color: #f0f4fa !important;
   border-radius: 5px !important;
   padding: 30px 10px 30px 10px;
+}
+
+.viewF .carousel-inner {
+  height: 600px !important;
 }/*# sourceMappingURL=app.css.map */

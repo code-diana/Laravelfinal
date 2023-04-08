@@ -73,7 +73,7 @@
     //finalizadas
     else if($newDate<$fecha_actual){
         echo '<button type="button" class="btn btn-primary finalizada">FINALIZADA</button>';
-        echo '<h3> <a class="btn btn-primary" href="#" role="button">Ver fotografias</a> </h3>';
+        ?><h3> <a class="btn btn-primary" href="{{ url('/fotosPublicas/'.$id) }}" role="button">Ver fotografias</a> </h3><?php
     }
 
     //Aún no se puede apuntar

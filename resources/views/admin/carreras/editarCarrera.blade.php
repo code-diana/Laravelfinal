@@ -10,7 +10,7 @@
 
 </style>
 
-<div class="container">
+<div class="container air">
 <form action="editarCarrera" method="post">
     @csrf
 <div class="input-group col-lg-12" style="margin:20px 0 20px;">

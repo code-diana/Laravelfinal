@@ -87,6 +87,9 @@ Route::post('subirFotos/{id}', [pictureController::class , 'uploadF']);
 //ver fotos
 Route::get('verFotos/{id}', [pictureController::class , 'viewF']);
 
+//ver fotos gente
+Route::get('fotosPublicas/{id}' ,[pictureController::class , 'publica']);
+
 //Ver corredores apuntados
 Route::get('verCorredores' , [carreraController::class , 'showAllRaces']);
 Route::post('verCorredores' , [carreraController::class , 'showAllRaces']);

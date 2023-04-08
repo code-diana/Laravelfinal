@@ -55,6 +55,20 @@ class pictureController extends Controller
         
     }
 
+
+    public function publica(Request $request){
+        $carrera = Race::find($request->id);
+        
+        $pictures= Picture::where('race_id',$request->id)->get();
+        return view('Gallery' ,[
+            'fotos' => $pictures,
+            'carreras'=> $carrera
+        ]);
+        
+    }
+
+
+
     public function viewPage(Request $request){
         $carrera = Race::find($request->id);
         

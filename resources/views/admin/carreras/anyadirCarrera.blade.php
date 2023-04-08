@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 {{-- Para escribir el contenido de la pagina, hay que hacer una section con mismo nombre del yield en el archivo layout.balde.php  --}}
 @section('content')
+<div class="air container">
 <h1>Añadir carrera</h1>
 
 <form action="anyadirCarrera" method="POST" accept-charset="UTF-8" class="formaddcarrera" enctype="multipart/form-data">
@@ -82,4 +83,5 @@
 </form>
 
 <p><a href="{{url('paginaPrincipal')}}">Volver atrás</a></p>
+</div>
 @endsection

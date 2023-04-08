@@ -5,7 +5,7 @@
     <div class="alert alert-danger">{{ session('error') }}</div>
   @endif
 
-  <section class="h-100 gradient-form" style="background-color: #eee;">
+  <section class="h-100 gradient-form air" style="background-color: #eee;">
     <div class="container py-5 h-100"  style="margin-bottom: 0;">
       <form action="formAdmin" method="POST" accept-charset="UTF-8">
         @csrf
