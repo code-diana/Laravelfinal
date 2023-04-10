@@ -6,13 +6,13 @@
             <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 style="display:inline">Clasificaciones Bikeroll</h1>
+                            <h1 style="display:inline">Clasificación general</h1>
                         </div>
                     </div>
             </div>
             <hr>
-                    <table class="table">
-                    <thead>
+                    <table class="table air">
+                    <thead style="background-color:#f0f4fa !important;">
                         <tr>
                         <th scope="col"></th>
                         <th scope="col">Posicion</th>
@@ -49,6 +49,22 @@
                         @endforeach
                     </tbody>
                     </table>
+
+
+                    <div class="col-lg-12 col-md-12 air" >
+                        <div class="card h-100">
+                        <div class="card-header" style="background-color:#f0f4fa !important;">
+                            <h5 class="card-title">Otras clasificaciones</h5>
+                        </div>
+                        <div class="card-body">
+                        
+                            <a href="#" class="btn btn-primary"><i class="bi bi-pencil-square"></i>Clasificación masculina</a>
+                            <a href="#" class="btn btn-primary"><i class="bi bi-pencil-square"></i>Clasificación femenina</a>
+                            
+                        </div>
+                        
+                        </div>
+                    </div>
             
 
 </div>
