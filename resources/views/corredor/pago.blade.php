@@ -2,11 +2,24 @@
 {{-- Para escribir el contenido de la pagina, hay que hacer una section con mismo nombre del yield en el archivo layout.balde.php  --}}
 @section('content')
 
+<div class="container air">
+
+
+<div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                            <h1 style="display:inline">Inscripción</h1>
+                    </div>
+                </div>
+        </div>
+        <hr>
+
+
 <form action="{{ route('ins') }} " method="POST" accept-charset="UTF-8" class="formaddcarrera" enctype="multipart/form-data">
   @csrf
   <div class="form-group row">
-        <label class="col-lg-10">Para continuar con el proceso de inscripción y pago, el equipo de Bikerroll debe asegurarse de que usted está de acuerdo con los términos y condiciones.</label>
-        <div class="col-lg-6">
+        <label class="col-lg-11">Para continuar con el proceso de inscripción y pago, el equipo de Bikerroll debe asegurarse de que usted está de acuerdo con los términos y condiciones.</label>
+        <div class="col-lg-12">
         <input type="radio" name="option" value="si" id="accept" required/>Si, acepto los términos y condiciones y quiero proseguir con el pago<br>
         <input type="radio" name="option" value="no" id="denied" required/>No, he cambiado de opinión y no quiero inscribirme
         </div>
@@ -33,14 +46,15 @@
     <p></p>
   
 </form>
-<form action="facturaCorredor" method="post">
+
+<!-- <form action="facturaCorredor" method="post">
   <input type="submit" value="Descargar factura">
   <input type="hidden" name="id_runner" value="{{$runner}}">
-</form>
-<a href="{{route('facturaCorredor' , $runner)}}">Descargar factura</a>  
+</form> -->
+<!-- <a href="{{route('facturaCorredor' , $runner)}}">Descargar factura</a>   -->
 
-{{-- <p><a href="{{url('/')}}">Volver atrás</a></p> --}}
-
+<!-- {{-- <p><a href="{{url('/')}}">Volver atrás</a></p> --}} -->
+<div>
 
 
 
@@ -54,6 +68,9 @@ $(document).ready(function(){
      $("#Change").html("Volver");
   }); 
 });   
-
 </script>
+
+
+
+
 @endsection
