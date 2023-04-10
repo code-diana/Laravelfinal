@@ -91,7 +91,7 @@
             <a class="nav-link" href="{{url('theraces')}}">Carreras</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Clasificaciones</a>
+            <a class="nav-link" href="{{url('clasificaciones')}}">Clasificaciones</a>
           </li>
         </ul>
         <!-- <form class="form-inline">

@@ -281,6 +281,20 @@ class carreraController extends Controller
             'races' => $races,'fin' => $fin
         ]);
     }
+
+    public function clasificacionSexo(Request $request){
+        $id = $request->id;
+        echo "aqui salen las clasificaciones por sexo";
+    }
+
+    /********************pagina clasificaciones *****************/
+    public function clasif(){
+        //important el get
+        $runner=Runner::orderBy('points', 'DESC')->get();
+        return view('clasificacionesvista' , [
+            'runners' => $runner
+        ]);
+    }
 }
 
 ?>

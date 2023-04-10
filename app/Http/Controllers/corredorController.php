@@ -56,6 +56,7 @@ class corredorController extends Controller{
                 
                 
 
+                
                 $runner=Runner::create([
                     'name'=>request('nombre'),
                     'last_name'=>request('surname'),

@@ -138,6 +138,12 @@ Route::post('facturaCorredor' ,[inscripcionController::class , 'facturaCorredor'
 //descargar pdf
 Route::get('download-pdf/{id}', [patronizeController::class, 'downloadPdf'])->name('download-pdf');
 
+//pdf clasificaciones
+
+
+//pagina Clasificaciones
+Route::get('clasificaciones', [carreraController::class, 'clasif']);
+
 //ver todas las carreras activas
 Route::get('theraces' , [carreraController::class , 'allrace']);
 Route::post('theraces' , [carreraController::class , 'allrace']);
