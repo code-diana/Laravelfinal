@@ -2,7 +2,11 @@
 {{-- Para escribir el contenido de la pagina, hay que hacer una section con mismo nombre del yield en el archivo layout.balde.php  --}}
 @section('content')
 
-<div class="air container">
+<div id="portada">
+    <img class="portada" src="../resources/img/clasificacion.png">
+</div>
+
+<div class="container" style="margin-top:40px">
             <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
