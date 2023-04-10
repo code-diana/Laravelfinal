@@ -55,39 +55,56 @@ class corredorController extends Controller{
 
                 
                 
+                $res=Runner::where('name',request('nombre'))->where('last_name', request('surname'))->where('adress',request('direction'))->count();
+                if ($res==0){
+                    $runner=Runner::create([
+                        'name'=>request('nombre'),
+                        'last_name'=>request('surname'),
+                        'adress'=>request('direction'),
+                        'birth_date'=>request('birth'),
+                        'sex'=>$sex,
+                        'pro'=>$pro,
+                        'federation_number'=>request('fed'),
+                        'points'=>0
 
-                
-                $runner=Runner::create([
-                    'name'=>request('nombre'),
-                    'last_name'=>request('surname'),
-                    'adress'=>request('direction'),
-                    'birth_date'=>request('birth'),
-                    'sex'=>$sex,
-                    'pro'=>$pro,
-                    'federation_number'=>request('fed'),
-                    'points'=>0
-
-                ]);
-
-
-                // $corredor=DB::table('runners')->where('name', request('nombre') );
-                $nameAs=request('aseguradora');
-
-                $As=Insurance::where('name', $nameAs)->first();
-                //hacerlo así si no peta(poner nombre en la ruta!!)
-                
-                // if ($pro==0){
-                    return redirect()->route('ins',[
-                            'runner'=>$runner->id,
-                            'id'=> request('id'),
-                            'aseguradora' => $As->id,
-                            'pro' => $pro
-                            
                     ]);
-                //}
-                // else{
-                //     return redirect('/');
-                // }
+
+                    // $runner=Runner::latest()->get();
+
+                    // $corredor=DB::table('runners')->where('name', request('nombre') );
+                    $nameAs=request('aseguradora');
+
+                    $As=Insurance::where('name', $nameAs)->first();
+                    //hacerlo así si no peta(poner nombre en la ruta!!)
+                    
+                    // if ($pro==0){
+                        return redirect()->route('ins',[
+                                'runner'=>$runner->id,
+                                'id'=> request('id'),
+                                'aseguradora' => $As->id,
+                                'pro' => $pro
+                                
+                        ]);
+                    //}
+                    // else{
+                    //     return redirect('/');
+                    // }
+                }
+                
+                else{
+                    $run=Runner::where('name',request('nombre'))->where('last_name', request('surname'))->where('adress',request('direction'))->first();
+
+                    $nameAs=request('aseguradora');
+                    $As=Insurance::where('name', $nameAs)->first();
+
+                    return redirect()->route('ins',[
+                        'runner'=>$run->id,
+                        'id'=> request('id'),
+                        'aseguradora' => $As->id,
+                        'pro' => $pro
+                        
+                    ]);
+                }
             }
             else{
                 ?> <script>alert('No se pueden inscribir más corredores')</script> <?php
