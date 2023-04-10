@@ -8,7 +8,15 @@
     img{width: 50%;height: 50%}
 </style>
 <div class="container air">
-<h1>Editar Mapa</h1>
+<div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                            <h1 style="display:inline">Editar Mapa</h1>
+                            <a href="{{url('/editarCarrera')}}" class="btn btn-primary float-right" style="margin-top: 10px;">Volver atrás</a>
+                    </div>
+                </div>
+        </div>
+        <hr>
 <form action="{{$carreras['id']}}" method="POST" enctype="multipart/form-data">
     @csrf
 
@@ -26,5 +34,5 @@
     </div>
 </form>   
 </div>
-<a href="{{url('/paginaPrincipal')}}">Volver atras</a>
+<!-- <a href="{{url('/paginaPrincipal')}}">Volver atras</a> -->
 @endsection

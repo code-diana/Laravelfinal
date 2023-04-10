@@ -2,20 +2,28 @@
 {{-- Para escribir el contenido de la pagina, hay que hacer una section con mismo nombre del yield en el archivo layout.balde.php  --}}
 @section('content')
 <div class="air container">
-<h1>Añadir carrera</h1>
+<div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                            <h1 style="display:inline">Añadir Carrera</h1>
+                            <a href="{{url('/paginaPrincipal')}}" class="btn btn-primary float-right" style="margin-top: 10px;">Volver atrás</a>
+                    </div>
+                </div>
+        </div>
+        <hr>
 
 <form action="anyadirCarrera" method="POST" accept-charset="UTF-8" class="formaddcarrera" enctype="multipart/form-data">
   @csrf
     <div class="form-group row">
       <label for="description" class="col-sm-2 col-form-label">Título</label>
       <div class="col-sm-10">
-        <input type="text" id="title" name="title" max-length="100" required>
+        <input type="text" id="title" class="form-control" name="title" max-length="100" required>
       </div>
     </div>
     <div class="form-group row">
       <label for="description" class="col-sm-2 col-form-label">Descripción</label>
       <div class="col-sm-10">
-        <textarea id="description" name="description" required></textarea>
+        <textarea id="description" class="form-control" name="description" required></textarea>
       </div>
     </div>
 
@@ -82,6 +90,6 @@
     </div>
 </form>
 
-<p><a href="{{url('paginaPrincipal')}}">Volver atrás</a></p>
+<!-- <p><a href="{{url('paginaPrincipal')}}">Volver atrás</a></p> -->
 </div>
 @endsection

@@ -8,19 +8,27 @@
     img{width: 50%;height: 50%}
 </style>
 <div class="container air">
-<h1>Editar carrera</h1>
+<div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                            <h1 style="display:inline">Editar Carrera {{$carreras['title']}}</h1>
+                            <a href="{{url('/editarCarrera')}}" class="btn btn-primary float-right" style="margin-top: 10px;">Volver atrás</a>
+                    </div>
+                </div>
+        </div>
+        <hr>
 <form action="{{$carreras['id']}}" method="POST">
     @csrf
     <div class="form-group row">
       <label for="description" class="col-sm-2 col-form-label">Título</label>
       <div class="col-sm-10">
-        <textarea id="title" name="title" required>{{$carreras['title']}}</textarea>
+        <textarea id="title"  class="form-control" name="title" required>{{$carreras['title']}}</textarea>
       </div>
     </div>
     <div class="form-group row">
       <label for="description" class="col-sm-2 col-form-label">Descripción</label>
       <div class="col-sm-10">
-        <textarea id="description" name="description" required>{{$carreras['description']}}</textarea>
+        <textarea id="description" class="form-control"  name="description" required>{{$carreras['description']}}</textarea>
       </div>
     </div>
 
@@ -74,5 +82,5 @@
     </div>
 </form>   
 </div>
-<a href="{{url('/paginaPrincipal')}}">Volver atras</a>
+<!-- <a href="{{url('/paginaPrincipal')}}">Volver atras</a> -->
 @endsection
