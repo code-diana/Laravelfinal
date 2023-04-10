@@ -102,7 +102,7 @@ Route::get('sponsorCarrera' , [patronizeController::class , 'showSponsors'])->mi
 Route::get('carreras-sponsor/{id}', [patronizeController::class , 'carreraSponsor'])->middleware('admin');
 
 //Mostrar informacion carrera
-Route::get('infoRace/{id}' , [carreraController::class , 'showInfoRace']);
+Route::get('infoRace/{id}' , [carreraController::class , 'showInfoRace'])->name('inforace');
 Route::get('fotosRace/{id}', [pictureController::class , 'viewPage']);
 
 //inscripcion

@@ -17,12 +17,13 @@
                 <div class="blockabout">
                     <div class="blockabout-inner text-center text-sm-start">
                         <div class="title-big pb-3 mb-3">
-                            <h3>Bienvenid@ a Bikeroll</h3>
+                            <h3 class="dob">Bienvenid@ a Bikeroll</h3>
                         </div>
                         <p class="description-p text-muted pe-0 pe-lg-0">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere sequi, quia, est sed dicta aliquid quidem facilis culpa iure perferendis? Dolor ad quia deserunt.
+                            Somos una empresa dedicada a la gestión de carreras de bicicletas para todos los niveles de ciclistas, desde principiantes hasta profesionales.<br>
+                            Nuestro objetivo es crear experiencias únicas y emocionantes para los ciclistas, al mismo tiempo que proporcionamos un ambiente seguro y bien organizado para todos los participantes.
                         </p>
-                        <p class="description-p text-muted pe-0 pe-lg-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere.</p>
+                        <p class="description-p text-muted pe-0 pe-lg-0"> Descubre nuevas rutas, conoce a otros ciclistas apasionados y disfruta de una experiencia de carrera única. ¡Te esperamos en nuestra próxima carrera!</p>
                         <div class="sosmed-horizontal pt-3 pb-3">
                             <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
                             <a target="_blank" href="https://twitter.com/?lang=es"><i class="fa fa-instagram"></i></a>

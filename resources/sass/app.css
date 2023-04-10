@@ -549,6 +549,11 @@ h2 {
   padding-top: 80px;
 }
 
+@media (max-width: 600px) {
+  .dob {
+    padding-top: 80px !important;
+  }
+}
 .navbar-dark .navbar-toggler-icon, .navbar-dark .navbar-toggler {
   background-color: #ebebeb !important;
   border-color: #ebebeb !important;
