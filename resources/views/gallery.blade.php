@@ -18,9 +18,19 @@
     <?php if ($fotos->count()==0){
                 echo '<p>No hay fotos disponibles </p>';
             } else{ ?>
+
+        <div class="col-lg-12">
+            @foreach($fotos as $foto)
+                <!-- <div class="col-lg-4"> -->
+                <?php $image=preg_replace('([^A-Za-z0-9 ])', '', $foto['image'])?>
+                <img src="../../resources/img/<?php echo strtolower($image) ?>.jpg" alt="" style="width:200px;height:100px">
+                <!-- </div> -->
+            
+            @endforeach
+        </div>
             
         
-    <div id="carouselExampleIndicators" class="carousel slide viewF" data-bs-ride="carousel">
+    <!-- <div id="carouselExampleIndicators" class="carousel slide viewF" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -53,8 +63,8 @@
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Siguiente</span>
-        </button>
-    </div>
+        </button> -->
+    <!-- </div> -->
     <?php }?>
 </div>
 @endsection
