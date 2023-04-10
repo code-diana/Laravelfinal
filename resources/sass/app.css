@@ -577,4 +577,16 @@ h2 {
 
 .viewF .carousel-inner {
   height: 600px !important;
+}
+
+.copas {
+  width: 50px !important;
+}
+
+.clasifications td, .clasifications th {
+  vertical-align: middle !important;
+}
+
+.medalla {
+  width: 35px !important;
 }/*# sourceMappingURL=app.css.map */
