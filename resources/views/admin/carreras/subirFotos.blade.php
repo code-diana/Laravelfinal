@@ -1,11 +1,21 @@
-<style>
+@extends('layouts.layout')
+@section('content')
+<!-- <style>
     td,th{border: 1px solid;}
     td{width: 80px}
     table{width: 1200px;margin: auto;text-align: center;}
     img{width: 50%;height: 50%}
-</style>
+</style> -->
 <div class="container air">
-<h1>Subir fotos de la carrera {{$carreras['id']}}</h1>
+<div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                            <h1 style="display:inline">Subir fotos de la carrera {{$carreras['title']}}</h1>
+                            <a href="{{url('/editarCarrera')}}" class="btn btn-primary float-right" style="margin-top: 10px;">Volver atrás</a>
+                    </div>
+                </div>
+        </div>
+        <hr>
 <form action="{{$carreras['id']}}" method="POST" enctype="multipart/form-data">
     @csrf
 
@@ -23,5 +33,5 @@
     </div>
 </form>   
 
-<a href="{{url('/paginaPrincipal')}}">Volver atras</a>
 </div>
+@endsection

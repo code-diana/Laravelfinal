@@ -1,18 +1,34 @@
-<h1>Aseguradora</h1>
+@extends('layouts.layout')
+@section('content')
+<div class="container air">
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                            <h1 style="display:inline">Alta aseguradoras</h1>
+                            <a href="{{url('/editarCarrera')}}" class="btn btn-primary float-right" style="margin-top: 10px;">Volver atrás</a>
+                    </div>
+                </div>
+        </div>
+        <hr>
 
-<form action="precioCarrera" method="POST">
-    @csrf
-    
-    <?php 
-    foreach($insurance as $row){ ?>
+    <form action="precioCarrera" method="POST">
+        @csrf
         
-    <label><input type="checkbox" id="cbox1" name="opciones[]" value="{{$row['id']}}"> {{$row['name']}} - {{$row['price']}}€ </label><br>
+        <?php 
+        foreach($insurance as $row){ ?>
+            
+        <label><input type="checkbox" id="cbox1" name="opciones[]" value="{{$row['id']}}"> {{$row['name']}} - {{$row['price']}}€ </label><br>
 
-    <?php
-    }
-    
-    ?>
-    <input type="number" value="<?php echo $idC ?>" name="idC" style="display:none">
-    <input type="submit" value="Crear" name="envio">
-</form>
-<a href="{{url('/paginaPrincipal')}}">Pagina principal</a>
+        <?php
+        }
+        
+        ?>
+
+        <input type="number" value="<?php echo $idC ?>" name="idC" style="display:none">
+
+        <br>
+        <input type="submit" value="Escoger Aseguradoras" name="envio">
+    </form>
+</div>
+
+@endsection

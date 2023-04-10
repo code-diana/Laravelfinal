@@ -13,6 +13,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                             <h1 style="display:inline">{{$carreras['title']}}</h1>
+                            <a href="{{url('/editarCarrera')}}" class="btn btn-primary float-right" style="margin-top: 10px;">Volver atrás</a>
                     </div>
                 </div>
         </div>
@@ -28,5 +29,4 @@
     @endforeach
     </div>
 </div>
-<a href="{{url('/editarCarrera')}}">Volver atras</a>
 @endsection

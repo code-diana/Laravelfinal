@@ -3,6 +3,7 @@
 <?php
     $id_race = $id;
 ?>
+<div class="container air">
 <h1>Corredores apuntados en la carrera {{$id_race}}</h1>
 
 {{-- ------------------- Buscador ------------------------------------------- --}}
@@ -68,6 +69,7 @@
         @endforeach
     </table>
 @endif
+</div>
 
 <a href="{{url('/paginaPrincipal')}}">Pagina principal</a>
 
