@@ -55,20 +55,20 @@
                     </table>
 
 
-                    <div class="col-lg-12 col-md-12 air" >
+                    <!-- <div class="col-lg-12 col-md-12 air" >
                         <div class="card h-100">
                         <div class="card-header" style="background-color:#f0f4fa !important;">
                             <h5 class="card-title">Otras clasificaciones</h5>
                         </div>
                         <div class="card-body">
                         
-                            <a href="#" class="btn btn-primary"><i class="bi bi-pencil-square"></i>Clasificación masculina</a>
+                            <a href="{{url('clasificacionesmasc')}}" class="btn btn-primary"><i class="bi bi-pencil-square"></i>Clasificación masculina</a>
                             <a href="#" class="btn btn-primary"><i class="bi bi-pencil-square"></i>Clasificación femenina</a>
                             
                         </div>
                         
                         </div>
-                    </div>
+                    </div> -->
             
 
 </div>

@@ -476,6 +476,19 @@ h2 {
     padding:30px 0 40px 0 !important;
 }
 
+.sectionsponsorInfo{
+    border-top: 7px solid #385c9edc;
+    height: auto;
+    width: 50%;
+    margin: 80px auto;
+    padding: 5px 0;
+}
+.tituloSpons{
+    width: max-content !important;
+    margin: auto;
+    color: black;
+}
+
 #carrerasfin{
     padding:70px 0 60px 0 !important;
 }
@@ -519,6 +532,8 @@ h2 {
     width: 100%;
     z-index: 999;
     top:0 !important;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
     a{
         color:#000 !important;
         font-size:16px;

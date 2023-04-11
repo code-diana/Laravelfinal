@@ -38,29 +38,40 @@ Route::post('/formAdmin', [adminController::class , 'create']);
 Route::get('logout', [adminController::class , 'logout']);
 
 //Aseguradores
-Route::get('anyadirAseguradora', [aseguradoraController::class , 'create']);
+Route::get('anyadirAseguradora', [aseguradoraController::class , 'create'])->middleware('admin');
 Route::post('anyadirAseguradora', [aseguradoraController::class , 'create']);
-Route::get('mostrarTodosAs', [aseguradoraController::class , 'index'])->name('mostrarTodosAs');
-Route::get('editarAseguradora/{id}' , [aseguradoraController::class , 'edit']);
+
+Route::get('mostrarTodosAs', [aseguradoraController::class , 'index'])->name('mostrarTodosAs')->middleware('admin');
+Route::post('mostrarTodosAs', [aseguradoraController::class , 'index'])->name('mostrarTodosAs')->middleware('admin');
+
+Route::get('editarAseguradora/{id}' , [aseguradoraController::class , 'edit'])->middleware('admin');
 Route::post('editarAseguradora/{id}' , [aseguradoraController::class , 'edit']);
-Route::get('activarAseguradora/{id}' , [aseguradoraController::class , 'activate']);
+Route::get('activarAseguradora/{id}' , [aseguradoraController::class , 'activate'])->middleware('admin');
 
 //Sponsors
-Route::get('anyadirSponsor' , [sponsorController::class , 'create']);
+Route::get('anyadirSponsor' , [sponsorController::class , 'create'])->middleware('admin');
 Route::post('anyadirSponsor' , [sponsorController::class , 'create']);
-Route::get('mostrarSponsors', [sponsorController::class , 'index'])->name('mostrarSponsors');
-Route::get('editarSponsor/{id}' , [sponsorController::class , 'edit']);
+
+Route::get('mostrarSponsors', [sponsorController::class , 'index'])->name('mostrarSponsors')->middleware('admin');
+Route::post('mostrarSponsors', [sponsorController::class , 'index'])->name('mostrarSponsors')->middleware('admin');
+
+Route::get('editarSponsor/{id}' , [sponsorController::class , 'edit'])->middleware('admin');
 Route::post('editarSponsor/{id}' , [sponsorController::class , 'edit']);
-Route::get('activarSponsor/{id}' , [sponsorController::class , 'activate']);
-Route::get('editarLogo/{id}' , [sponsorController::class , 'editLogo']);
+Route::get('activarSponsor/{id}' , [sponsorController::class , 'activate'])->middleware('admin');
+Route::get('editarLogo/{id}' , [sponsorController::class , 'editLogo'])->middleware('admin');
 Route::post('editarLogo/{id}' , [sponsorController::class , 'editLogo']);
 
 //seleccionar las carreras
+//seleccionar las carreras
 Route::post('chooseRaces/{id}' , [patronizeController::class , 'showRaces']);
-//Carrera
-Route::get('anyadirCarrera', [carreraController::class , 'showAddRace']);
+Route::get('chooseRaces/{id}' , [patronizeController::class , 'showRaces']);
 
+
+//Carrera
+Route::get('anyadirCarrera', [carreraController::class , 'showAddRace'])->middleware('admin');
+Route::get('eliminarCarrera/{id_race}/{id_sponsor}', [patronizeController::class , 'deleteRace']);
 Route::post('anyadirCarrera', [carreraController::class , 'addRace']);
+
 
 //cambiar estado carrera
 Route::get('editarCarrera', [carreraController::class , 'showEditRace'])->name('editarCarrera');
@@ -68,8 +79,9 @@ Route::post('editarCarrera', [carreraController::class , 'showEditRace'])->name(
 
 Route::get('estadoCarrera/{id}', [carreraController::class , 'changeState']);
 
+
 //editar datos carrera
-Route::get('datosCarrera/{id}', [carreraController::class , 'editRace']);
+Route::get('datosCarrera/{id}', [carreraController::class , 'editRace'])->middleware('admin');
 Route::post('datosCarrera/{id}', [carreraController::class , 'editRace']);
 
 //editar imagen carrera
@@ -91,15 +103,17 @@ Route::get('verFotos/{id}', [pictureController::class , 'viewF']);
 Route::get('fotosPublicas/{id}' ,[pictureController::class , 'publica']);
 
 //Ver corredores apuntados
-Route::get('verCorredores' , [carreraController::class , 'showAllRaces']);
+Route::get('verCorredores' , [carreraController::class , 'showAllRaces'])->middleware('admin');
 Route::post('verCorredores' , [carreraController::class , 'showAllRaces']);
 
-Route::get('runnersRace/{id}' , [inscripcionController::class , 'showRunners']);
+Route::get('runnersRace/{id}' , [inscripcionController::class , 'showRunners'])->middleware('admin');
 Route::post('runnersRace/{id}' , [inscripcionController::class , 'showRunners']);
+
 
 //Sponsors-Carrera
 Route::get('sponsorCarrera' , [patronizeController::class , 'showSponsors'])->middleware('admin');
-Route::get('carreras-sponsor/{id}', [patronizeController::class , 'carreraSponsor'])->middleware('admin');
+Route::get('carreras-sponsor/{id}', [patronizeController::class , 'carreraSponsor'])->name('carreraSponsor')->middleware('admin');
+Route::post('carreras-sponsor/{id}', [patronizeController::class , 'carreraSponsor'])->name('carreraSponsor')->middleware('admin');
 
 //Mostrar informacion carrera
 Route::get('infoRace/{id}' , [carreraController::class , 'showInfoRace'])->name('inforace');
@@ -110,7 +124,7 @@ Route::get('inscribir', [inscripcionController::class, 'inscribir'])->name('ins'
 Route::post('inscribir', [inscripcionController::class, 'inscribir'])->name('ins');
 
 //escoger aseguradora carrera
-Route::get('aseguradoraC/{id}', [aseguradoraController::class, 'precioCarrera']);
+Route::get('aseguradoraC/{id}', [aseguradoraController::class, 'precioCarrera'])->middleware('admin');
 Route::post('aseguradoraC/{id}', [aseguradoraController::class, 'precioCarrera']);
 
 //escoger aseguradora desde cero
@@ -144,10 +158,15 @@ Route::get('download-pdf/{id}', [patronizeController::class, 'downloadPdf'])->na
 //pagina Clasificaciones
 Route::get('clasificaciones', [carreraController::class, 'clasif']);
 
+// Route::get('clasificacionesmasc',[carreraController::class, 'clasifmasc']);
+
 //ver todas las carreras activas
 Route::get('theraces' , [carreraController::class , 'allrace']);
 Route::post('theraces' , [carreraController::class , 'allrace']);
 
-//Clasificaciones
+//pagina Clasificaciones
+Route::get('clasificaciones', [carreraController::class, 'clasif']);
 Route::get('clasificacionSexo/{id}', [carreraController::class, 'clasificacionSexo'])->name('clasi-sexo');
+Route::get('clasificaciones/{id}', [carreraController::class, 'clasificaciones'])->name('clasi');
+
 ?>

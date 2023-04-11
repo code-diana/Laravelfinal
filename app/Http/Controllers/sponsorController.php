@@ -11,8 +11,17 @@ use Illuminate\Support\Str;
 
 class sponsorController extends Controller
 {
-    public function index(){
-        $sponsor = Sponsor::all();
+    public function index(Request $request){
+        if(isset($_POST['buscador'])){
+            $buscador = $request->input('buscador');
+            $sponsor = Sponsor::where('name', 'LIKE', '%' . $buscador . '%')
+                        ->orWhere('description', 'LIKE', '%' . $buscador . '%')
+                        ->orWhere('id', 'LIKE', '%' . $buscador . '%')
+                        ->get();        
+        }
+        else{
+            $sponsor = Sponsor::all();
+        }
         return view("admin.sponsors.mostrarSponsors" , [
             'sponsor' => $sponsor
         ]);

@@ -10,13 +10,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="http://localhost/bikerollSalma/resources/pics/race3.jpg" class="d-block w-100" alt="Imagen 1">
+                <img src="http://localhost/bikerollSalma/resources/img/race1.jpeg" class="d-block w-100" alt="Imagen 1">
             </div>
             <div class="carousel-item">
-                <img src="http://localhost/bikerollSalma/resources/pics/race2.jpg" class="d-block w-100" alt="Imagen 2">
+                <img src="http://localhost/bikerollSalma/resources/img/race2.jpeg" class="d-block w-100" alt="Imagen 2">
             </div>
             <div class="carousel-item">
-                <img src="http://localhost/bikerollSalma/resources/pics/race1.jpg" class="d-block w-100" alt="Imagen 3">
+                <img src="http://localhost/bikerollSalma/resources/img/race3.jpeg" class="d-block w-100" alt="Imagen 3">
             </div>
         </div>
 
@@ -30,7 +30,7 @@
         </button>
     </div>
 
-<div style="background-color:#">
+<div>
 
 <div class="container">
         <form action="theraces" method="post">

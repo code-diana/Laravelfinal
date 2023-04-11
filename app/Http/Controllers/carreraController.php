@@ -28,7 +28,8 @@ class carreraController extends Controller
                 'start'=>request('start'),
                 //se crean desactivadas
                 'state'=>0,
-                'price'=>request('price')
+                'price'=>request('price'),
+                'sponsor_price'=>request('sponsor_price')
             ]);  
 
             //subir la imagen
@@ -282,11 +283,6 @@ class carreraController extends Controller
         ]);
     }
 
-    public function clasificacionSexo(Request $request){
-        $id = $request->id;
-        echo "aqui salen las clasificaciones por sexo";
-    }
-
     /********************pagina clasificaciones *****************/
     public function clasif(){
         //important el get
@@ -295,6 +291,43 @@ class carreraController extends Controller
             'runners' => $runner
         ]);
     }
+
+
+    public function clasificaciones(Request $request){
+        $id = $request->id; //id carrera
+        $master20 = [];
+
+        //Sexo femenino
+        $femenino = DB::table('inscriptions')
+                ->join('runners', 'runners.id', '=', 'inscriptions.runner_id')
+                ->select('inscriptions.*', 'runners.*')
+                ->where('race_id', $id)
+                ->where('sex', 0)
+                ->orderBy('points','DESC')
+                ->get();
+        
+        //Sexo masculino
+        $masculino = DB::table('inscriptions')
+                        ->join('runners', 'runners.id', '=', 'inscriptions.runner_id')
+                        ->select('inscriptions.*', 'runners.*')
+                        ->where('race_id', $id)
+                        ->where('sex', 1)
+                        ->orderBy('points', 'DESC')
+                        ->get();
+
+
+        //Edad
+        $runners = DB::table('runners')
+                ->join('inscriptions', 'inscriptions.runner_id', '=', 'runners.id')
+                ->select('runners.*', 'runners.points')
+                ->where('inscriptions.race_id', $id)
+                ->orderBy('runners.points', 'DESC')
+                ->get();
+
+        return view('corredor.clasificaciones', ['runners' => $runners, 'masculino' => $masculino, 'femenino' => $femenino]);
+    }
+
+
 }
 
 ?>

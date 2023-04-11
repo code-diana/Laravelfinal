@@ -5,12 +5,23 @@ use Illuminate\Http\Request;
 use App\Models\Insurance;
 use App\Models\Ensure;
 use App\Models\Race;
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\adminController;
+
 
 class aseguradoraController extends Controller
 {
-    public function index(){
-        //Mostrar todas las aseguradoras
-        $insurance = Insurance::all();
+    public function index(Request $request){
+        if(isset($_POST['buscador'])){
+            $buscador = $request->input('buscador');
+            $insurance = Insurance::where('cif', 'LIKE', '%' . $buscador . '%')
+                        ->orWhere('name', 'LIKE', '%' . $buscador . '%')
+                        ->orWhere('address', 'LIKE', '%' . $buscador . '%')
+                        ->get();        
+        }
+        else{
+            $insurance = Insurance::all();
+        }
         return view('admin.aseguradoras.mostrarTodosAs' , [
             'insurance' => $insurance
         ]);
@@ -77,13 +88,6 @@ class aseguradoraController extends Controller
         else{
             return view('admin.aseguradoras.editarAseguradora' ,['insurance' => $insurance]);
         }
-    }
-
-    public function notLogin(){
-        ?>
-        <script>alert("Inicia sesión para ver esta página!")</script>
-        <?php
-        return redirect('/');
     }
 
     public function precioCarrera(Request $request){
