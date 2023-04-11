@@ -9,6 +9,7 @@ use App\Models\Race;
 use App\Models\Ensure;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 use PDF;
 
 class inscripcionController extends Controller
@@ -77,26 +78,30 @@ class inscripcionController extends Controller
         }
     }
 
-    public function facturaCorredor(){
-        // $id_runner = $request->id;
-        // if(isset($_POST)){
-        //     $id_runner = $_POST['id_runner'];
-        //     echo $id_runner;
-        // }
-        // echo $id_runner;
+    public function facturaCorredor(Request $request){
+        $runner = $request->runner;
+        $race = $request->race;
         //Informacion de carrera y corredor
         $results = DB::table('inscriptions')
                 ->join('races', 'races.id', '=', 'inscriptions.race_id')
                 ->join('runners', 'runners.id', '=', 'inscriptions.runner_id')
-                ->select('races.*', 'inscriptions.*', 'runners.*')
-                ->where('inscriptions.runner_id', '=', 6)
+                ->leftJoin('insurances', 'insurances.id', '=', 'inscriptions.id_insurances')
+                ->select('races.*', 'inscriptions.*', 'runners.*', 'insurances.*', 'insurances.price as insurance_price', 'races.price as race_price', 'runners.name as nameR', 'insurances.name as nameI')//Dar alias a la columna price
+                ->where('inscriptions.runner_id', '=', $runner)
+                ->where('inscriptions.race_id', '=', $race)
                 ->get();
 
-        view()->share('factura.pdf',$results);
+        view()->share('Factura_carrera.pdf',$results);
+        if(count($results)==0){
+            echo "No existe ningúna carrera con el id:".$race;
+            return redirect('/');
+        }
+        else{
+            $pdf = PDF::loadView('corredor.facturaCorredor', ['results' => $results]);
+            return $pdf->download('Factura_carrera.pdf');
+            //return view('corredor.facturaCorredor',['results' => $results]);
+        }
 
-        $pdf = PDF::loadView('corredor.pdfInfoCorredor', ['results' => $results]);
-
-        return $pdf->download('factura.pdf');
     }
 
     public function showRunners(Request $request){

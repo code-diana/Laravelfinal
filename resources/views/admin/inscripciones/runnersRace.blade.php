@@ -5,7 +5,7 @@
     $id_race = $id;
 ?>
 
-<div class="container mt-5">
+<div class="container mt-5 air">
     <h1 class="mb-4">Corredores apuntados en la carrera {{$id_race}}</h1>
     {{-- ------------------- Buscador ------------------------------------------- --}}
     <div class="row">
