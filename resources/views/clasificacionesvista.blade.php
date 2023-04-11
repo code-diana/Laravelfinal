@@ -72,6 +72,14 @@
             
 
 </div>
+<div class="col-lg-12 col-sm-12" id="logosinfo" style="background-color:#000 !important">
+                @foreach($sponsors as $sponsor)
+                    <!-- <div class="col-lg-4 col-sm-12 logos"> -->
+                        <?php $image=preg_replace('([^A-Za-z0-9 ])', '', $sponsor->logo)?>
+                        <a style="display:inline !important"><img class="logo" src="../resources/img/<?php echo strtolower($image) ?>.png" alt=""></a>
+                    <!-- </div> -->
+                @endforeach  
+</div>
 
 
 @endsection

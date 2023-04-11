@@ -8,6 +8,7 @@ use App\Models\Runner;
 use App\Models\Inscription;
 use App\Models\Ensure;
 use App\Models\Insurance;
+use App\Models\Sponsor;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 
@@ -287,8 +288,10 @@ class carreraController extends Controller
     public function clasif(){
         //important el get
         $runner=Runner::orderBy('points', 'DESC')->get();
+        $sponsors=Sponsor::where('main_plain',1)->where('sponsorState',1)->get();
+
         return view('clasificacionesvista' , [
-            'runners' => $runner
+            'runners' => $runner, 'sponsors'=>$sponsors
         ]);
     }
 
