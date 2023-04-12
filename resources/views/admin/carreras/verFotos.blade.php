@@ -22,7 +22,7 @@
     <div class="col-lg-12">
     @foreach($fotos as $foto)
         <!-- <div class="col-lg-4"> -->
-        <img src="http://localhost/bikerollSalma{{$foto['image']}}" alt="" style="width:200px;height:100px">
+        <img src="http://www.dianasalma-pruebas.com.mialias.net/bikerollSalma{{$foto['image']}}" alt="" style="width:200px;height:100px">
         <!-- </div> -->
        
     @endforeach

@@ -23,7 +23,7 @@
             @foreach($fotos as $foto)
                 <!-- <div class="col-lg-4"> -->
                 <?php $image=preg_replace('([^A-Za-z0-9 ])', '', $foto['image'])?>
-                <img src="../../resources/img/<?php echo strtolower($image) ?>.jpg" alt="" style="width:200px;height:100px">
+                <img src="http://www.dianasalma-pruebas.com.mialias.net/bikerollSalma{{$foto['image']}}" alt="" style="width:200px;height:100px">
                 <!-- </div> -->
             
             @endforeach

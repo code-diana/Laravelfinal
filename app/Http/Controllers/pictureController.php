@@ -84,7 +84,7 @@ class pictureController extends Controller
         $carrera = Race::find($request->id);
         
         $pictures= Picture::where('race_id',$request->id)->get();
-        return view('Gallery' ,[
+        return view('gallery' ,[
             'fotos' => $pictures,
             'carreras'=> $carrera
         ]);
