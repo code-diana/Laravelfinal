@@ -11,6 +11,7 @@ use App\Models\Insurance;
 use App\Models\Sponsor;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
+use PDF;
 
 class carreraController extends Controller
 {
@@ -327,7 +328,9 @@ class carreraController extends Controller
                 ->orderBy('runners.points', 'DESC')
                 ->get();
 
-        return view('corredor.clasificaciones', ['runners' => $runners, 'masculino' => $masculino, 'femenino' => $femenino]);
+        // return view('corredor.clasificaciones', ['runners' => $runners, 'masculino' => $masculino, 'femenino' => $femenino]);
+        $pdf = PDF::loadView('corredor.clasificaciones', ['runners' => $runners, 'masculino' => $masculino, 'femenino' => $femenino]);
+        return $pdf->download('Clasificaciones.pdf');
     }
 
 

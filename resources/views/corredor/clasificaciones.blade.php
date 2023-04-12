@@ -1,6 +1,4 @@
-@extends('layouts.layout')
-{{-- Para escribir el contenido de la pagina, hay que hacer una section con mismo nombre del yield en el archivo layout.balde.php  --}}
-@section('content')
+
 
 <div id="portada">
     <img class="portada" src="localhost/bikerollSalma/resources/pics/race3.jpg">
@@ -17,7 +15,7 @@
     <hr>
     <h4 class="mb-3">Hombres</h4>
     <table class="table air">
-        <thead style="background-color:#687ca0 !important;">
+        <thead>
             <tr>
                 <th scope="col"></th>
                 <th scope="col">Posición</th>
@@ -63,7 +61,7 @@
 
     <h4>Mujeres</h4>
     <table class="table air">
-        <thead style="background-color:#687ca0 !important;">
+        <thead>
             <tr>
                 <th scope="col"></th>
                 <th scope="col">Posición</th>
@@ -113,6 +111,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
+                <h1></h1>
+                <h1></h1>
                 <h1 style="display:inline;color:black">Clasificación por edad</h1>
             </div>
         </div>
@@ -148,7 +148,7 @@
             ?>
             <h4>{{ $titulo }}</h4>
             <table class="table air">
-                <thead style="background-color:#687ca0 !important;">
+                <thead>
                     <tr>
                         <th scope="col"></th>
                         <th scope="col">Posición</th>
@@ -190,5 +190,3 @@
 </div>
 
 </div>
-
-@endsection

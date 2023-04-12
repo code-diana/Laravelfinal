@@ -169,4 +169,7 @@ Route::get('clasificaciones', [carreraController::class, 'clasif']);
 Route::get('clasificacionSexo/{id}', [carreraController::class, 'clasificacionSexo'])->name('clasi-sexo');
 Route::get('clasificaciones/{id}', [carreraController::class, 'clasificaciones'])->name('clasi');
 
+//Pdf clasificaciones
+Route::get('pdfClasi', [carreraController::class, 'imprimirPdfClasificaciones'])
+
 ?>
